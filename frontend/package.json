@@ -1,0 +1,41 @@
+{
+  "name": "nature-atlas",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build"
+  },
+  "dependencies": {
+    "@stomp/stompjs": "^7.1.1",
+    "axios": "^1.6.8",
+    "compressorjs": "^1.2.1",
+    "core-js": "^3.8.3",
+    "echarts": "^5.5.0",
+    "element-ui": "^2.15.14",
+    "normalize.css": "^8.0.1",
+    "querystring": "^0.2.1",
+    "sockjs-client": "^1.6.1",
+    "vue": "2.7.16",
+    "vue-router": "^3.5.1",
+    "vue-video-player": "^5.0.2",
+    "vuex": "^3.6.2"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~5.0.0",
+    "@vue/cli-plugin-router": "~5.0.0",
+    "@vue/cli-plugin-vuex": "~5.0.0",
+    "@vue/cli-service": "~5.0.0",
+    "babel-plugin-component": "^1.1.1",
+    "css-loader": "^7.1.1",
+    "less": "^4.0.0",
+    "less-loader": "^8.0.0",
+    "sass": "^1.99.0",
+    "sass-loader": "^16.0.7",
+    "style-loader": "^4.0.0",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.4.5",
+    "vue-cli-plugin-element": "~1.0.1",
+    "vue-template-compiler": "2.7.16"
+  }
+}

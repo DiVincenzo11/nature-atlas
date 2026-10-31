@@ -1,0 +1,11 @@
+**/node_modules/
+**/target/
+**/dist/
+**/.idea/
+**/.git-old/
+**/data/
+**/logs/
+*.log
+.env.local
+**/application-local.*
+**/.env.*.local

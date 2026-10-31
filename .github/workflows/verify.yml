@@ -1,0 +1,73 @@
+name: Build and integration smoke test
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    services:
+      mysql:
+        image: mysql:8.0
+        env:
+          MYSQL_ROOT_PASSWORD: ci-root-disposable
+          MYSQL_DATABASE: nature_atlas_demo
+          MYSQL_USER: nature_demo
+          MYSQL_PASSWORD: ci-demo-disposable
+        ports: ['3306:3306']
+        options: >-
+          --health-cmd="mysqladmin ping -h 127.0.0.1 -pci-root-disposable"
+          --health-interval=10s --health-timeout=5s --health-retries=12
+      redis:
+        image: redis:7-alpine
+        ports: ['16381:6379']
+    env:
+      DB_HOST: 127.0.0.1
+      DB_NAME: nature_atlas_demo
+      DB_USER: nature_demo
+      DB_PASSWORD: ci-demo-disposable
+      JWT_SECRET: ci-only-disposable-signing-secret-0123456789abcdef
+      REDIS_PORT: '16381'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+          cache: maven
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Initialize disposable database
+        run: |
+          MYSQL_PWD="$DB_PASSWORD" mysql -h 127.0.0.1 -u "$DB_USER" --default-character-set=utf8mb4 "$DB_NAME" < database/demo.sql
+      - name: Build backend
+        run: mvn -B -f backend/pom.xml -DskipTests package
+      - name: Build frontend
+        working-directory: frontend
+        run: |
+          npm ci --ignore-scripts --no-audit --no-fund
+          npm run build:prod
+      - name: Verify live API flows
+        run: |
+          pip install -r scripts/requirements.txt
+          cd backend
+          java -jar target/bird.jar > /tmp/nature-backend.log 2>&1 &
+          cd ..
+          python - <<'PY'
+          import time,requests
+          for _ in range(60):
+              try:
+                  if requests.get('http://127.0.0.1:18900/bird/allbirddata',timeout=2).status_code==200:break
+              except requests.RequestException:pass
+              time.sleep(1)
+          else:raise SystemExit('Backend did not become ready')
+          PY
+          python scripts/smoke_test.py
+      - name: Backend log on failure
+        if: failure()
+        run: tail -100 /tmp/nature-backend.log || true
