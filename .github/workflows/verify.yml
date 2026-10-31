@@ -51,7 +51,7 @@ jobs:
         working-directory: frontend
         run: |
           npm ci --ignore-scripts --no-audit --no-fund
-          npm run build:prod
+          npm run build
       - name: Verify live API flows
         run: |
           pip install -r scripts/requirements.txt
@@ -71,3 +71,4 @@ jobs:
       - name: Backend log on failure
         if: failure()
         run: tail -100 /tmp/nature-backend.log || true
+
