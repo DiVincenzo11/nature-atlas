@@ -1,0 +1,60 @@
+[
+  {
+    "file": "bald-eagle.jpg",
+    "status": "detected",
+    "boxes": 1,
+    "labels": [
+      "bald eagle"
+    ],
+    "info_list": [
+      [
+        "白头海雕",
+        1,
+        "",
+        ""
+      ]
+    ],
+    "model_mode": "imagenet_demo"
+  },
+  {
+    "file": "flamingos.jpg",
+    "status": "detected",
+    "boxes": 13,
+    "labels": [
+      "flamingo",
+      "flamingo",
+      "flamingo",
+      "flamingo",
+      "flamingo",
+      "flamingo",
+      "unknown",
+      "flamingo",
+      "unknown",
+      "flamingo",
+      "flamingo",
+      "flamingo",
+      "flamingo"
+    ],
+    "info_list": [
+      [
+        "红鹳（ImageNet类别）",
+        11,
+        "",
+        ""
+      ],
+      [
+        "未知鸟类/类别不支持",
+        2,
+        "",
+        ""
+      ]
+    ],
+    "model_mode": "imagenet_demo"
+  },
+  {
+    "file": "generated_blank.png",
+    "status": "no_bird_detected",
+    "boxes": 0,
+    "negative_control": true
+  }
+]

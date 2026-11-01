@@ -1,5 +1,5 @@
 <template>
-  <div class="container"><el-alert title="图片识别服务未配置：本地演示支持图鉴与特征检索，暂无真实 AI 推理结果。" type="info" :closable="false" style="position:absolute;top:8px;left:2%;width:96%;z-index:1" />
+  <div class="container"><el-alert :title="modelNotice" type="info" :closable="false" style="position:absolute;top:8px;left:2%;width:96%;z-index:1" />
     <div class="left">
       <div class="detail">
         <h1>图片选择</h1>
@@ -35,9 +35,9 @@
         <div class="detail">
           <h1>识别结果</h1>
         </div>
-        <div v-for="(item, i) in result.info_list" @click="lookDetail(i)">
+        <div v-for="(item, i) in result.info_list" :key="i" @click="lookDetail(i)">
           <img :src="item[3]" alt="" v-if="item[3]!==''">
-          <img src="../../../../public/image/16.png" alt="" v-else>
+          <p v-else>图鉴暂无对应配图</p>
           <div class="name">{{ item[0] }}</div>
           <div class="rate">数量：
             <div class="point">{{ item[1] }}</div>
@@ -49,9 +49,17 @@
       <el-divider class="full-divider" direction="vertical"></el-divider>
     </div>
     <div class="right">
+      <div v-if="result.detect_img_url" class="local-result">
+        <h2>两阶段识别输出</h2>
+        <img :src="result.detect_img_url" alt="鸟类检测框与分类结果" style="max-width:100%;max-height:55vh">
+        <p v-if="result.status === 'no_bird_detected'">未检测到鸟类，不生成物种预测。</p>
+        <p v-for="(d, i) in result.detections" :key="'d'+i">
+          {{ i+1 }}. {{ d.display_name }} · 检测置信度 {{ (d.detector_confidence*100).toFixed(1) }}%
+          · 分类分数 {{ (d.classifier_probability*100).toFixed(1) }}%（未校准）
+        </p>
+      </div>
       <div class="detail" v-if="detaildata.length!==0">
         <h1>识别结果</h1>
-        <img :src="result.detect_img_url" alt="" v-if="result" class="detectImg">
         <div class="mu topmu">
           <div class="title">
             <el-tag
@@ -198,6 +206,11 @@ export default {
       tips: '暂无识别结果'
     };
   },
+  computed: {
+    modelNotice() {
+      return this.result.model ? this.result.model.notice : '可接入本地 YOLOv8＋EfficientNetV2 服务；需启动并配置模型。原比赛权重未恢复，公开预训练演示不代表原项目性能。';
+    }
+  },
   methods: {
     handleRemove(file) {
       let uploadFiles = this.$refs.pictureUpload.uploadFiles
@@ -291,7 +304,7 @@ export default {
     lookDetail(i) {
       if (this.result.info_list && this.result.info_list.length === 0) return (
           this.detaildata = [],
-              this.tips = '暂无详细数据'
+              this.tips = this.result.status === 'no_bird_detected' ? '未检测到鸟类' : '图鉴暂无对应条目，识别图与分类分数见上方'
       )
 
       axios.get('/bird/birdDetail', {
@@ -301,8 +314,9 @@ export default {
       })
           .then(response => {
             // 请求成功，处理响应
-            if (response.data === null) {
-              Message.error("暂无该鸟类的详情信息")
+            if (!response.data || response.code !== 0) {
+              this.detaildata = [];
+              this.tips = '图鉴暂无该类别条目；模型结果仍可在上方查看';
             } else {
               this.detaildata = response.data;
             }
@@ -333,6 +347,8 @@ export default {
   left: 10px;
   width: 250px; /* 左侧区域宽度 */
   overflow-y: scroll;
+  padding-top: 65px;
+  box-sizing: border-box;
 }
 
 .divider-container {
@@ -355,6 +371,8 @@ export default {
   right: 0;
   left: 265px; /* 左侧区域宽度 */
   height: 90vh;
+  overflow-y: auto;
+  padding-top: 65px;
   max-height: calc(100vh - 20px); /* 右边图片区域最大高度为视口高度减去一定空间 */
 }
 

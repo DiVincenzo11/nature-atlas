@@ -1,0 +1,622 @@
+{
+  "status": "detected",
+  "detections": [
+    {
+      "box": [
+        808.84,
+        112.99,
+        979.56,
+        443.15
+      ],
+      "crop_box": [
+        800,
+        96,
+        980,
+        460
+      ],
+      "detector_confidence": 0.8451594114303589,
+      "label": "flamingo",
+      "display_name": "flamingo",
+      "classifier_probability": 0.785986602306366,
+      "accepted": true,
+      "top_k": [
+        {
+          "label": "flamingo",
+          "probability": 0.785986602306366,
+          "bird_category": true
+        },
+        {
+          "label": "pelican",
+          "probability": 0.001058404566720128,
+          "bird_category": true
+        },
+        {
+          "label": "spoonbill",
+          "probability": 0.0009913549292832613,
+          "bird_category": true
+        },
+        {
+          "label": "black swan",
+          "probability": 0.0007805712521076202,
+          "bird_category": true
+        },
+        {
+          "label": "jack-o'-lantern",
+          "probability": 0.000765659031458199,
+          "bird_category": false
+        }
+      ]
+    },
+    {
+      "box": [
+        613.78,
+        121.53,
+        928.13,
+        627.34
+      ],
+      "crop_box": [
+        598,
+        96,
+        944,
+        653
+      ],
+      "detector_confidence": 0.6323726177215576,
+      "label": "flamingo",
+      "display_name": "flamingo",
+      "classifier_probability": 0.7969838976860046,
+      "accepted": true,
+      "top_k": [
+        {
+          "label": "flamingo",
+          "probability": 0.7969838976860046,
+          "bird_category": true
+        },
+        {
+          "label": "pelican",
+          "probability": 0.0009213435114361346,
+          "bird_category": true
+        },
+        {
+          "label": "black swan",
+          "probability": 0.0008021664107218385,
+          "bird_category": true
+        },
+        {
+          "label": "spoonbill",
+          "probability": 0.0007565657724626362,
+          "bird_category": true
+        },
+        {
+          "label": "jack-o'-lantern",
+          "probability": 0.0007157230866141617,
+          "bird_category": false
+        }
+      ]
+    },
+    {
+      "box": [
+        316.38,
+        274.4,
+        608.11,
+        644.88
+      ],
+      "crop_box": [
+        301,
+        255,
+        623,
+        654
+      ],
+      "detector_confidence": 0.6277439594268799,
+      "label": "flamingo",
+      "display_name": "flamingo",
+      "classifier_probability": 0.7877780199050903,
+      "accepted": true,
+      "top_k": [
+        {
+          "label": "flamingo",
+          "probability": 0.7877780199050903,
+          "bird_category": true
+        },
+        {
+          "label": "pelican",
+          "probability": 0.0008634906844235957,
+          "bird_category": true
+        },
+        {
+          "label": "spoonbill",
+          "probability": 0.0008612335659563541,
+          "bird_category": true
+        },
+        {
+          "label": "jack-o'-lantern",
+          "probability": 0.0007541115628555417,
+          "bird_category": false
+        },
+        {
+          "label": "black swan",
+          "probability": 0.0007514030439779162,
+          "bird_category": true
+        }
+      ]
+    },
+    {
+      "box": [
+        247.36,
+        119.08,
+        367.54,
+        382.17
+      ],
+      "crop_box": [
+        241,
+        105,
+        374,
+        396
+      ],
+      "detector_confidence": 0.6029532551765442,
+      "label": "flamingo",
+      "display_name": "flamingo",
+      "classifier_probability": 0.7864670753479004,
+      "accepted": true,
+      "top_k": [
+        {
+          "label": "flamingo",
+          "probability": 0.7864670753479004,
+          "bird_category": true
+        },
+        {
+          "label": "black swan",
+          "probability": 0.0009851634968072176,
+          "bird_category": true
+        },
+        {
+          "label": "pelican",
+          "probability": 0.0009177100728265941,
+          "bird_category": true
+        },
+        {
+          "label": "goldfish",
+          "probability": 0.0009149149991571903,
+          "bird_category": false
+        },
+        {
+          "label": "jack-o'-lantern",
+          "probability": 0.0009101958712562919,
+          "bird_category": false
+        }
+      ]
+    },
+    {
+      "box": [
+        87.28,
+        209.35,
+        187.67,
+        399.6
+      ],
+      "crop_box": [
+        82,
+        199,
+        193,
+        410
+      ],
+      "detector_confidence": 0.5341628789901733,
+      "label": "flamingo",
+      "display_name": "flamingo",
+      "classifier_probability": 0.8064642548561096,
+      "accepted": true,
+      "top_k": [
+        {
+          "label": "flamingo",
+          "probability": 0.8064642548561096,
+          "bird_category": true
+        },
+        {
+          "label": "goldfish",
+          "probability": 0.008056187070906162,
+          "bird_category": false
+        },
+        {
+          "label": "pretzel",
+          "probability": 0.006807144731283188,
+          "bird_category": false
+        },
+        {
+          "label": "American lobster",
+          "probability": 0.006477965507656336,
+          "bird_category": false
+        },
+        {
+          "label": "potter's wheel",
+          "probability": 0.005041831638664007,
+          "bird_category": false
+        }
+      ]
+    },
+    {
+      "box": [
+        89.6,
+        207.43,
+        415.29,
+        608.02
+      ],
+      "crop_box": [
+        73,
+        187,
+        432,
+        629
+      ],
+      "detector_confidence": 0.5271101593971252,
+      "label": "flamingo",
+      "display_name": "flamingo",
+      "classifier_probability": 0.7650089263916016,
+      "accepted": true,
+      "top_k": [
+        {
+          "label": "flamingo",
+          "probability": 0.7650089263916016,
+          "bird_category": true
+        },
+        {
+          "label": "pelican",
+          "probability": 0.0009998809546232224,
+          "bird_category": true
+        },
+        {
+          "label": "black swan",
+          "probability": 0.0008923799032345414,
+          "bird_category": true
+        },
+        {
+          "label": "jack-o'-lantern",
+          "probability": 0.0008805706165730953,
+          "bird_category": false
+        },
+        {
+          "label": "spoonbill",
+          "probability": 0.0007409619865939021,
+          "bird_category": true
+        }
+      ]
+    },
+    {
+      "box": [
+        0.02,
+        410.25,
+        56.39,
+        531.36
+      ],
+      "crop_box": [
+        0,
+        404,
+        60,
+        538
+      ],
+      "detector_confidence": 0.4871847331523895,
+      "label": "unknown",
+      "display_name": "未知鸟类/类别不支持",
+      "classifier_probability": 0.18328677117824554,
+      "accepted": false,
+      "top_k": [
+        {
+          "label": "hoopskirt",
+          "probability": 0.18328677117824554,
+          "bird_category": false
+        },
+        {
+          "label": "Maltese dog",
+          "probability": 0.08364661782979965,
+          "bird_category": false
+        },
+        {
+          "label": "overskirt",
+          "probability": 0.05809144675731659,
+          "bird_category": false
+        },
+        {
+          "label": "Sealyham terrier",
+          "probability": 0.0467568002641201,
+          "bird_category": false
+        },
+        {
+          "label": "Angora",
+          "probability": 0.02308344841003418,
+          "bird_category": false
+        }
+      ]
+    },
+    {
+      "box": [
+        413.87,
+        157.9,
+        517.18,
+        303.93
+      ],
+      "crop_box": [
+        408,
+        150,
+        523,
+        312
+      ],
+      "detector_confidence": 0.4178422689437866,
+      "label": "flamingo",
+      "display_name": "flamingo",
+      "classifier_probability": 0.8035920858383179,
+      "accepted": true,
+      "top_k": [
+        {
+          "label": "flamingo",
+          "probability": 0.8035920858383179,
+          "bird_category": true
+        },
+        {
+          "label": "macaw",
+          "probability": 0.0010302037699148059,
+          "bird_category": true
+        },
+        {
+          "label": "pelican",
+          "probability": 0.0009297720971517265,
+          "bird_category": true
+        },
+        {
+          "label": "black swan",
+          "probability": 0.0007196873775683343,
+          "bird_category": true
+        },
+        {
+          "label": "jack-o'-lantern",
+          "probability": 0.0007186585571616888,
+          "bird_category": false
+        }
+      ]
+    },
+    {
+      "box": [
+        191.42,
+        138.37,
+        261.72,
+        341.31
+      ],
+      "crop_box": [
+        187,
+        128,
+        266,
+        352
+      ],
+      "detector_confidence": 0.34610193967819214,
+      "label": "unknown",
+      "display_name": "未知鸟类/类别不支持",
+      "classifier_probability": 0.29674309492111206,
+      "accepted": false,
+      "top_k": [
+        {
+          "label": "nematode",
+          "probability": 0.29674309492111206,
+          "bird_category": false
+        },
+        {
+          "label": "velvet",
+          "probability": 0.05386994406580925,
+          "bird_category": false
+        },
+        {
+          "label": "isopod",
+          "probability": 0.04657009616494179,
+          "bird_category": false
+        },
+        {
+          "label": "Petri dish",
+          "probability": 0.022255180403590202,
+          "bird_category": false
+        },
+        {
+          "label": "nipple",
+          "probability": 0.02173857018351555,
+          "bird_category": false
+        }
+      ]
+    },
+    {
+      "box": [
+        414.7,
+        138.36,
+        553.08,
+        309.65
+      ],
+      "crop_box": [
+        407,
+        129,
+        560,
+        319
+      ],
+      "detector_confidence": 0.3036269247531891,
+      "label": "flamingo",
+      "display_name": "flamingo",
+      "classifier_probability": 0.8059667944908142,
+      "accepted": true,
+      "top_k": [
+        {
+          "label": "flamingo",
+          "probability": 0.8059667944908142,
+          "bird_category": true
+        },
+        {
+          "label": "black swan",
+          "probability": 0.0010019815526902676,
+          "bird_category": true
+        },
+        {
+          "label": "pelican",
+          "probability": 0.0009239938226528466,
+          "bird_category": true
+        },
+        {
+          "label": "macaw",
+          "probability": 0.0006773631903342903,
+          "bird_category": true
+        },
+        {
+          "label": "jack-o'-lantern",
+          "probability": 0.0006678918143734336,
+          "bird_category": false
+        }
+      ]
+    },
+    {
+      "box": [
+        548.63,
+        189.09,
+        682.52,
+        608.41
+      ],
+      "crop_box": [
+        541,
+        168,
+        690,
+        630
+      ],
+      "detector_confidence": 0.29918935894966125,
+      "label": "flamingo",
+      "display_name": "flamingo",
+      "classifier_probability": 0.7646994590759277,
+      "accepted": true,
+      "top_k": [
+        {
+          "label": "flamingo",
+          "probability": 0.7646994590759277,
+          "bird_category": true
+        },
+        {
+          "label": "spoonbill",
+          "probability": 0.0010562672978267074,
+          "bird_category": true
+        },
+        {
+          "label": "jack-o'-lantern",
+          "probability": 0.0009721617097966373,
+          "bird_category": false
+        },
+        {
+          "label": "black swan",
+          "probability": 0.0008834955515339971,
+          "bird_category": true
+        },
+        {
+          "label": "pelican",
+          "probability": 0.0008258292800746858,
+          "bird_category": true
+        }
+      ]
+    },
+    {
+      "box": [
+        550.59,
+        165.05,
+        733.4,
+        603.34
+      ],
+      "crop_box": [
+        541,
+        143,
+        743,
+        626
+      ],
+      "detector_confidence": 0.2635716497898102,
+      "label": "flamingo",
+      "display_name": "flamingo",
+      "classifier_probability": 0.7720284461975098,
+      "accepted": true,
+      "top_k": [
+        {
+          "label": "flamingo",
+          "probability": 0.7720284461975098,
+          "bird_category": true
+        },
+        {
+          "label": "black swan",
+          "probability": 0.0009378422982990742,
+          "bird_category": true
+        },
+        {
+          "label": "pelican",
+          "probability": 0.0009108114754781127,
+          "bird_category": true
+        },
+        {
+          "label": "jack-o'-lantern",
+          "probability": 0.0008557052933610976,
+          "bird_category": false
+        },
+        {
+          "label": "spoonbill",
+          "probability": 0.0008053996716625988,
+          "bird_category": true
+        }
+      ]
+    },
+    {
+      "box": [
+        87.77,
+        208.36,
+        231.01,
+        397.43
+      ],
+      "crop_box": [
+        80,
+        198,
+        239,
+        407
+      ],
+      "detector_confidence": 0.25227662920951843,
+      "label": "flamingo",
+      "display_name": "flamingo",
+      "classifier_probability": 0.7702087759971619,
+      "accepted": true,
+      "top_k": [
+        {
+          "label": "flamingo",
+          "probability": 0.7702087759971619,
+          "bird_category": true
+        },
+        {
+          "label": "black swan",
+          "probability": 0.001200126833282411,
+          "bird_category": true
+        },
+        {
+          "label": "jack-o'-lantern",
+          "probability": 0.001166125643067062,
+          "bird_category": false
+        },
+        {
+          "label": "macaw",
+          "probability": 0.0009616162278689444,
+          "bird_category": true
+        },
+        {
+          "label": "goldfish",
+          "probability": 0.0009288869332522154,
+          "bird_category": false
+        }
+      ]
+    }
+  ],
+  "info": {
+    "flamingo": 11,
+    "未知鸟类/类别不支持": 2
+  },
+  "model": {
+    "detector": "YOLOv8",
+    "detector_sha256": "f59b3d833e2ff32e194b5bb8e08d211dc7c5bdf144b90d2c8412c47ccfc83b36",
+    "classifier": "EfficientNetV2-S",
+    "classifier_sha256": "da468d40b6cf6708663924e45c225b9a042e50fdf7e76c04afe00450f85a3489",
+    "mode": "imagenet_demo",
+    "original_project_weights": false,
+    "probability_calibrated": false,
+    "notice": "公开预训练模型流程演示；非原比赛模型，未进行目标鸟类数据集效果评测。"
+  },
+  "image_size": [
+    980,
+    654
+  ],
+  "elapsed_seconds": 0.7641847999766469
+}

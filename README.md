@@ -2,7 +2,15 @@
 
 从本地 `bird.zip` 归档恢复的 Vue 2 + Spring Boot 项目。支持分类图鉴、鸟类特征检索、综合搜索、登录和基于 WebSocket/STOMP 的专家聊天。
 
-**当前可运行范围：本地图鉴、检索、账号和聊天。图片 AI 识别依赖外部服务，归档未提供模型权重，本次未验证真实推理；默认明确返回“服务未配置”，不提供模拟预测。**
+**当前可运行范围：本地图鉴、检索、账号和聊天；新增可选本地 YOLOv8＋EfficientNetV2 两阶段识别，已用公开预训练模型和真实图片验证到网页上传结果。原比赛算法权重没有恢复，尚未完成目标鸟类数据集的效果评测。未配置模型时仍明确返回“服务未配置”。**
+
+## 新增本地两阶段识别 v0.2.0
+
+`bird_service/` 提供 YOLOv8 检测 → OpenCV 裁剪 → EfficientNetV2-S 分类、训练评测 CLI 与 FastAPI 服务；Java 后端和 Vue 识别页已接入，不需要七牛云或外部鸟类服务。安装、公开预训练演示、自有类别训练及配置见 [算法模块 README](bird_service/README.md)。
+
+![本地两阶段识别实测](docs/images/two-stage-recognition.png)
+
+本轮是新增重建实现。公开演示使用 COCO / ImageNet 预训练权重，只识别模型支持的类别；不等于原比赛模型恢复，也没有声称达到原比赛效果。
 
 ## 功能截图
 
@@ -67,7 +75,7 @@ npm run serve
 
 原图像识别链路依赖外部鸟类接口、百度植物识别、七牛云上传和 RabbitMQ。仅使用自己的服务与凭据配置：`BIRD_API_URL`、`BAIDU_API_KEY`、`BAIDU_SECRET_KEY`、`QINIU_ACCESS_KEY`、`QINIU_SECRET_KEY`、`QINIU_BUCKET`、`QINIU_DOMAIN`、`RABBITMQ_HOST`、`RABBITMQ_PORT`、`RABBITMQ_USER`、`RABBITMQ_PASSWORD`。
 
-云调用开关为 `CLOUD_DETECTION_ENABLED=true` / `CLOUD_UPLOAD_ENABLED=true`。这些开关只启用原调用链，**不保证外部 API 现有响应格式兼容**。真实模型识别、云头像上传及 RabbitMQ 上传队列尚未进行端到端验证。本次没有调用归档中原有的云密钥，也没有将这些密钥上传。
+云调用开关为 `CLOUD_DETECTION_ENABLED=true` / `CLOUD_UPLOAD_ENABLED=true`。这些开关只启用原调用链，**不保证外部 API 现有响应格式兼容**。原外部模型、云头像上传及 RabbitMQ 上传队列尚未进行端到端验证。本次没有调用归档中原有的云密钥，也没有将这些密钥上传。本地两阶段识别使用独立的 `BIRD_LOCAL_ENABLED=true` 开关，已验证范围见新增算法模块。
 
 ## 验证
 
@@ -96,4 +104,4 @@ python scripts/smoke_test.py
 
 代码及原有静态素材来自用户提供的项目归档，保留原目录对应关系和代码注释。本仓库是归档恢复与演示整理，不声称全部代码或素材为维护者原创。原包没有独立许可证文件，本次不替原作者追加开源许可授权；第三方依赖和素材权利仍归各自权利人。
 
-旧版账号密码摘要方案沿用归档兼容逻辑，依赖也较旧；仅适合本机学习与展示，未做完整生产安全审计。完整生物数据库、音频、科普文章/视频内容及真实识别服务不在本次验证范围内。
+旧版账号密码摘要方案沿用归档兼容逻辑，依赖也较旧；仅适合本机学习与展示，未做完整生产安全审计。完整生物数据库、音频、科普文章/视频内容及原外部识别服务不在本次验证范围内；新增本地识别的限制另见算法模块说明。

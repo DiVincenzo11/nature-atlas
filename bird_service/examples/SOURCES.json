@@ -1,0 +1,20 @@
+[
+  {
+    "file": "bald-eagle.jpg",
+    "source": "https://nationalzoo.si.edu/object/nzp_NZP-20130308_002CPM",
+    "download": "https://ids.si.edu/ids/deliveryService?id=NZP-20130308_002CPM&max=980",
+    "author": "Smithsonian National Zoo, record NZP-20130308_002CPM",
+    "license": "CC0 / public domain per source page",
+    "sha256": "faed0379d30a89c618e0747456876e3236cf5d5e57dd281aebdd92bed93bae8c",
+    "purpose": "pretrained pipeline demonstration only; not held-out test"
+  },
+  {
+    "file": "flamingos.jpg",
+    "source": "https://nationalzoo.si.edu/object/nzp_NZP-20090127-0422MM-000002",
+    "download": "https://ids.si.edu/ids/deliveryService?id=NZP-20090127-0422MM-000002&max=980",
+    "author": "Mehgan Murphy, Smithsonian's National Zoo",
+    "license": "CC0 / public domain per source page",
+    "sha256": "8720fc07aaa742c66ecd414fe321b93da6102f0eaa9a90b6a1a4a134335d32d0",
+    "purpose": "pretrained pipeline demonstration only; not held-out test"
+  }
+]

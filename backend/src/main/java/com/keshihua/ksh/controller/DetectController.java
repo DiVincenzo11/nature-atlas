@@ -4,6 +4,7 @@ import com.keshihua.ksh.pojo.BirdChar;
 import com.keshihua.ksh.pojo.DetectLog;
 import com.keshihua.ksh.pojo.Result;
 import com.keshihua.ksh.service.DetectionRateLimiter;
+import com.keshihua.ksh.service.LocalBirdRecognitionService;
 import com.keshihua.ksh.strategy.DetectionStrategy;
 import com.keshihua.ksh.strategy.DetectionStrategyFactory;
 import com.keshihua.ksh.utils.DynamicQuery;
@@ -31,6 +32,9 @@ public class DetectController {
     @Autowired
     private DetectionRateLimiter detectionRateLimiter;
 
+    @Autowired
+    private LocalBirdRecognitionService localBirdRecognitionService;
+
     /**
      * 通用图片识别入口，基于路径片段动态选择具体策略，并进行全局与用户级限流。
      */
@@ -39,7 +43,8 @@ public class DetectController {
                          @RequestParam("file") MultipartFile file,
                          @RequestParam("userid") int userid) {
         try {
-            if (!"true".equalsIgnoreCase(System.getenv("CLOUD_DETECTION_ENABLED"))) return Result.error("图片识别服务未配置；本地演示支持图鉴和特征检索，不返回模拟识别结果。");
+            boolean localBird="birdpic".equals(type) && "true".equalsIgnoreCase(System.getenv("BIRD_LOCAL_ENABLED"));
+            if (!localBird && !"true".equalsIgnoreCase(System.getenv("CLOUD_DETECTION_ENABLED"))) return Result.error("图片识别服务未配置；本地演示支持图鉴和特征检索，不返回模拟识别结果。");
             // 1) 全局/按类型令牌桶限流
             ConsumptionProbe probe = detectionRateLimiter.tryConsume(type);
             if (!probe.isConsumed()) {
@@ -50,6 +55,7 @@ public class DetectController {
             if (!detectionRateLimiter.allowUserOnceIn3Seconds(userid)) {
                 return Result.error("3秒内仅允许识别一次，请稍后重试");
             }
+            if (localBird) return localBirdRecognitionService.detect(file,userid);
             DetectionStrategy strategy = detectionStrategyFactory.getStrategy(type);
             return strategy.detect(file, userid);
         } catch (IllegalArgumentException e) {

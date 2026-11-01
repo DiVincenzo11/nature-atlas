@@ -1,0 +1,16 @@
+name: Bird algorithm tests
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
+      - run: python -m pip install -e "./bird_service[test]"
+      - run: python -m pytest -q bird_service/tests
+      - run: python bird_service/scripts/verify_training.py --out /tmp/bird-software-diagnostic

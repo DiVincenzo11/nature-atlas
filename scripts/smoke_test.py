@@ -28,7 +28,15 @@ assert call(user,'GET','/detect/log',params={'userid':2}).status_code==403
 assert call(user,'POST','/user/updateNickname',json={'username':'expert_demo','nickname':'forbidden'}).json()['code']!=0
 ok(user,'POST','/user/updateNickname',json={'username':'demo','nickname':'演示观察员'});passed('authenticated profile / ownership and history access checks')
 assert call(s,'POST','/detect/birdpic',data={'userid':1},files={'file':('demo.png',b'test','image/png')}).status_code==401
-j=call(user,'POST','/detect/birdpic',data={'userid':1},files={'file':('demo.png',b'test','image/png')}).json();assert j['code']!=0 and '未配置' in j['mseeage'];passed('unconfigured image recognition returns explicit failure, no fabricated predictions')
+local_image=os.getenv('BIRD_LOCAL_TEST_IMAGE')
+if local_image:
+ from pathlib import Path
+ image=Path(local_image)
+ j=call(user,'POST','/detect/birdpic',data={'userid':1},files={'file':(image.name,image.read_bytes(),'image/jpeg')}).json()
+ assert j['code']==0 and j['data']['detections'] and j['data']['model']['original_project_weights'] is False
+ passed('configured local YOLOv8 / EfficientNetV2 returns real detections and model provenance')
+else:
+ j=call(user,'POST','/detect/birdpic',data={'userid':1},files={'file':('demo.png',b'test','image/png')}).json();assert j['code']!=0 and '未配置' in j['mseeage'];passed('unconfigured image recognition returns explicit failure, no fabricated predictions')
 experts=ok(user,'GET','/expert/list');assert experts and experts[0]['expertId']==1
 history=ok(user,'GET','/expert/messages',params={'expertId':1});assert history;passed('expert directory / isolated message history')
 ws=websocket.create_connection(BASE.replace('http','ws',1)+'/ws-chat/websocket',timeout=8,origin='http://127.0.0.1:18901')

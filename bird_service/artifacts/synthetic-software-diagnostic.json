@@ -1,0 +1,31 @@
+{
+  "split": "test",
+  "labels": [
+    "synthetic_a",
+    "synthetic_b"
+  ],
+  "checkpoint_sha256": "30ff4062f22507597698baac58ce8d6031e5dcae171c44a3ba5d46929fa21f57",
+  "manifest_sha256": "cff4fd210755133992348df9139f6525047c79df26a2b1d25d0d80ef9e742653",
+  "evaluation_scope": "classifier_on_provided_crops; not end-to-end detection mAP",
+  "images": 2,
+  "loss": 0.6932026147842407,
+  "accuracy": 0.5,
+  "macro_f1": 0.3333333432674408,
+  "per_class_f1": [
+    0.0,
+    0.6666666865348816
+  ],
+  "confusion_matrix": [
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      1
+    ]
+  ],
+  "synthetic": true,
+  "real_bird_accuracy": false,
+  "scope": "one-epoch random-initialized frozen-backbone software diagnostic"
+}
