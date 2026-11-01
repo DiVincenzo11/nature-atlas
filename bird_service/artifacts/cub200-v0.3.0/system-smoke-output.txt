@@ -1,0 +1,29 @@
+PASS bird taxonomy tree
+PASS feature filtering / parameterized query
+PASS bird detail / image list
+PASS cross-category search
+PASS cat / dog / reptile / amphibian atlas queries
+PASS invalid login rejected
+PASS login / JWT / password hash excluded from response
+PASS authenticated profile / ownership and history access checks
+PASS configured local YOLOv8 / EfficientNetV2 returns real detections and model provenance
+PASS expert directory / isolated message history
+PASS STOMP authenticated send / private subscription / database persistence
+PASS second login invalidates previous session
+{
+  "passed": 12,
+  "checks": [
+    "bird taxonomy tree",
+    "feature filtering / parameterized query",
+    "bird detail / image list",
+    "cross-category search",
+    "cat / dog / reptile / amphibian atlas queries",
+    "invalid login rejected",
+    "login / JWT / password hash excluded from response",
+    "authenticated profile / ownership and history access checks",
+    "configured local YOLOv8 / EfficientNetV2 returns real detections and model provenance",
+    "expert directory / isolated message history",
+    "STOMP authenticated send / private subscription / database persistence",
+    "second login invalidates previous session"
+  ]
+}

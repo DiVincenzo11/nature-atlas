@@ -1,0 +1,8 @@
+{
+  "passed": 3,
+  "checks": [
+    "finetuned: per-image accuracy, top5, full confusion and macro-F1 independently recomputed",
+    "frozen_head: per-image accuracy, top5, full confusion and macro-F1 independently recomputed",
+    "pipeline: all joint-success/detection/classification counters recomputed from per-image rows"
+  ]
+}

@@ -7,6 +7,7 @@ import time
 import cv2
 import numpy as np
 from PIL import Image, ImageOps
+from PIL.Image import open as open_image
 import torch
 from .model import ALIASES, BIRD_INDICES, load_classifier, sha256
 
@@ -56,11 +57,15 @@ class BirdPipeline:
         if self.bird_id is None:
             raise ValueError("Detector label map does not contain the bird category")
         self.model, self.transform, self.labels, self.mode = load_classifier(classifier, device)
+        self.experiment_metadata=getattr(self.model,"experiment_metadata",{})
+        self.display_names=self.experiment_metadata.get("label_display_names",{})
         self.device, self.confidence, self.threshold, self.image_size = device, confidence, species_threshold, image_size
         self.metadata = {"detector": "YOLOv8", "detector_sha256": sha256(detector),
                          "classifier": "EfficientNetV2-S", "classifier_sha256": sha256(classifier),
                          "mode": self.mode, "original_project_weights": False,
                          "probability_calibrated": False,
+                         "class_count":len(self.labels),
+                         "training_dataset":self.experiment_metadata.get("dataset","upstream ImageNet-1K" if self.mode=="imagenet_demo" else "user dataset"),
                          "notice": "公开预训练模型流程演示；非原比赛模型，未进行目标鸟类数据集效果评测。" if self.mode == "imagenet_demo" else
                                    "自训练鸟类分类权重；类别和效果以该权重的独立测试报告为准。"}
 
@@ -79,6 +84,8 @@ class BirdPipeline:
                 crop, padded = crop_box(image, box)
                 probabilities = self.model(self.transform(crop).unsqueeze(0).to(self.device)).softmax(1)[0].cpu()
                 decision = decide(probabilities, self.labels, self.mode, self.threshold)
+                if decision["accepted"] and decision["label"] in self.display_names:
+                    decision["display_name"]=self.display_names[decision["label"]]
                 detections.append({"box": [round(float(v),2) for v in box], "crop_box": padded,
                                    "detector_confidence": float(score), **decision})
         annotated = cv2.cvtColor(np.asarray(image), cv2.COLOR_RGB2BGR)

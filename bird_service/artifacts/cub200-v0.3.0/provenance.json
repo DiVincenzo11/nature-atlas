@@ -1,0 +1,24 @@
+{
+  "date": "2026-11-01",
+  "base_public_commit": "3547c2e60b6aeb64ad304ffe96322aba90c6990e",
+  "exports": {
+    "finetuned": {
+      "file": "cub200-finetuned-efficientnetv2-s.pt",
+      "sha256": "20252ff37aa696218b303800a8912504e8b96b23e556b67238d017a1a1d00fb9",
+      "source_sha256": "d2f3973abe3486c8aa70aa675b7445a466291de937b79c8c80a4f50f64de0b2e",
+      "tensor_equality_verified": true
+    },
+    "frozen_head": {
+      "file": "cub200-frozen_head-efficientnetv2-s.pt",
+      "sha256": "40a805b2ec8f5d23f788e6bc25398624675b57ecc8dba0c6d3655db286101931",
+      "source_sha256": "ec4a2b74a91598b488d0260e807681a756199ebed022910faba02e8d0269de9a",
+      "tensor_equality_verified": true
+    }
+  },
+  "source_at_training": {
+    "run_cub_experiment.py": "30657c8bab07c09c49281d2596e6fb3d233a9e7e277a5d1e18796647d868499a",
+    "train.py": "44947cd906107c208c11a59b884f0f324264c846ce60258559313b57aaa0d5a4"
+  },
+  "normalization": "TorchVersion metadata to plain string; no tensor changes; default weights_only=True reload verified",
+  "training_failure_scope": "Original controller completed both 15-epoch training jobs, then stopped on metadata-safe-loading error before test evaluation. Standalone final evaluator tested both exported models without retraining or changing selection."
+}

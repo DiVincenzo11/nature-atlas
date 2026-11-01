@@ -1,0 +1,12 @@
+{
+  "dataset": "CUB-200-2011",
+  "record": "https://data.caltech.edu/api/records/65de6-vp158",
+  "homepage": "https://www.vision.caltech.edu/datasets/cub_200_2011/",
+  "archive": "CUB_200_2011.tgz",
+  "bytes": 1150585339,
+  "md5": "97eceeb196236b17998738112f37df78",
+  "sha256": "0c685df5597a8b24909f6a7c9db6d11e008733779a671760afef78feb49bf081",
+  "extracted_files": 11800,
+  "image_use": "Non-commercial research and education; original image copyrights remain with owners.",
+  "pretraining_warning": "Official dataset warns that CUB images may overlap ImageNet pretraining data."
+}

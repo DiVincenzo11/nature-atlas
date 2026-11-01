@@ -2,15 +2,19 @@
 
 从本地 `bird.zip` 归档恢复的 Vue 2 + Spring Boot 项目。支持分类图鉴、鸟类特征检索、综合搜索、登录和基于 WebSocket/STOMP 的专家聊天。
 
-**当前可运行范围：本地图鉴、检索、账号和聊天；新增可选本地 YOLOv8＋EfficientNetV2 两阶段识别，已用公开预训练模型和真实图片验证到网页上传结果。原比赛算法权重没有恢复，尚未完成目标鸟类数据集的效果评测。未配置模型时仍明确返回“服务未配置”。**
+**当前可运行范围：本地图鉴、检索、账号和聊天，以及本地 YOLOv8＋EfficientNetV2 两阶段识别。v0.3.0 已完成 CUB-200-2011 全部 200 类的真实训练、对照评测与网页接入，并发布新训练权重。原比赛算法权重没有恢复；未配置模型时明确返回“服务未配置”。**
 
-## 新增本地两阶段识别 v0.2.0
+## 真实鸟类训练与两阶段识别 v0.3.0
 
 `bird_service/` 提供 YOLOv8 检测 → OpenCV 裁剪 → EfficientNetV2-S 分类、训练评测 CLI 与 FastAPI 服务；Java 后端和 Vue 识别页已接入，不需要七牛云或外部鸟类服务。安装、公开预训练演示、自有类别训练及配置见 [算法模块 README](bird_service/README.md)。
 
 ![本地两阶段识别实测](docs/images/two-stage-recognition.png)
 
-本轮是新增重建实现。公开演示使用 COCO / ImageNet 预训练权重，只识别模型支持的类别；不等于原比赛模型恢复，也没有声称达到原比赛效果。
+CUB 官方测试集 5,794 张：GT 裁剪分类 Top-1 **78.65%**、macro-F1 **0.7857**，比冻结主干基线提高 **15.08 个百分点**；整图“主框 IoU≥0.5＋鸟种正确＋通过阈值”的联合成功率 **72.75%**，不是 detection mAP。训练/验证/测试为 4,794 / 1,200 / 5,794。
+
+[完整实验协议、边界与复现步骤](bird_service/docs/CUB200_EXPERIMENT.md) · [下载权重与源码](https://github.com/DiVincenzo11/nature-atlas/releases/tag/v0.3.0)。CUB 可能与 ImageNet 预训练图重叠，本次是公开数据下的新训练实验，不能替代原比赛效果；上图保留的是 v0.2.0 公开预训练演示截图。
+
+![CUB-200 真实实验结果](bird_service/artifacts/cub200-v0.3.0/results.png)
 
 ## 功能截图
 

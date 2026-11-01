@@ -1,0 +1,244 @@
+{
+  "model_health": {
+    "ready": true,
+    "model": {
+      "detector": "YOLOv8",
+      "detector_sha256": "f59b3d833e2ff32e194b5bb8e08d211dc7c5bdf144b90d2c8412c47ccfc83b36",
+      "classifier": "EfficientNetV2-S",
+      "classifier_sha256": "20252ff37aa696218b303800a8912504e8b96b23e556b67238d017a1a1d00fb9",
+      "mode": "custom_species",
+      "original_project_weights": false,
+      "probability_calibrated": false,
+      "class_count": 200,
+      "training_dataset": "CUB-200-2011",
+      "notice": "自训练鸟类分类权重；类别和效果以该权重的独立测试报告为准。"
+    }
+  },
+  "python_to_java_authenticated_upload": [
+    {
+      "image_id": 1,
+      "target": "001.Black_footed_Albatross",
+      "status": "detected",
+      "detections": [
+        {
+          "box": [
+            72.68,
+            30.4,
+            380.2,
+            330.38
+          ],
+          "crop_box": [
+            57,
+            15,
+            396,
+            335
+          ],
+          "detector_confidence": 0.40492743253707886,
+          "label": "001.Black_footed_Albatross",
+          "display_name": "Black footed Albatross",
+          "classifier_probability": 0.43942025303840637,
+          "accepted": true,
+          "top_k": [
+            {
+              "label": "001.Black_footed_Albatross",
+              "probability": 0.43942025303840637,
+              "bird_category": true
+            },
+            {
+              "label": "002.Laysan_Albatross",
+              "probability": 0.3329414427280426,
+              "bird_category": true
+            },
+            {
+              "label": "003.Sooty_Albatross",
+              "probability": 0.22241652011871338,
+              "bird_category": true
+            },
+            {
+              "label": "045.Northern_Fulmar",
+              "probability": 0.003156194929033518,
+              "bird_category": true
+            },
+            {
+              "label": "072.Pomarine_Jaeger",
+              "probability": 0.00045143882744014263,
+              "bird_category": true
+            }
+          ]
+        }
+      ],
+      "model": {
+        "detector": "YOLOv8",
+        "detector_sha256": "f59b3d833e2ff32e194b5bb8e08d211dc7c5bdf144b90d2c8412c47ccfc83b36",
+        "classifier": "EfficientNetV2-S",
+        "classifier_sha256": "20252ff37aa696218b303800a8912504e8b96b23e556b67238d017a1a1d00fb9",
+        "mode": "custom_species",
+        "original_project_weights": false,
+        "probability_calibrated": false,
+        "class_count": 200,
+        "training_dataset": "CUB-200-2011",
+        "notice": "自训练鸟类分类权重；类别和效果以该权重的独立测试报告为准。"
+      },
+      "info_list": [
+        [
+          "Black footed Albatross",
+          1,
+          "",
+          ""
+        ]
+      ],
+      "annotated_image_returned": true
+    },
+    {
+      "image_id": 3,
+      "target": "001.Black_footed_Albatross",
+      "status": "detected",
+      "detections": [
+        {
+          "box": [
+            9.74,
+            112.58,
+            403.62,
+            306.03
+          ],
+          "crop_box": [
+            0,
+            102,
+            424,
+            316
+          ],
+          "detector_confidence": 0.924900472164154,
+          "label": "001.Black_footed_Albatross",
+          "display_name": "Black footed Albatross",
+          "classifier_probability": 0.5423669815063477,
+          "accepted": true,
+          "top_k": [
+            {
+              "label": "001.Black_footed_Albatross",
+              "probability": 0.5423669815063477,
+              "bird_category": true
+            },
+            {
+              "label": "003.Sooty_Albatross",
+              "probability": 0.23844003677368164,
+              "bird_category": true
+            },
+            {
+              "label": "045.Northern_Fulmar",
+              "probability": 0.21511659026145935,
+              "bird_category": true
+            },
+            {
+              "label": "071.Long_tailed_Jaeger",
+              "probability": 0.0007236429373733699,
+              "bird_category": true
+            },
+            {
+              "label": "060.Glaucous_winged_Gull",
+              "probability": 0.0006590214325115085,
+              "bird_category": true
+            }
+          ]
+        }
+      ],
+      "model": {
+        "detector": "YOLOv8",
+        "detector_sha256": "f59b3d833e2ff32e194b5bb8e08d211dc7c5bdf144b90d2c8412c47ccfc83b36",
+        "classifier": "EfficientNetV2-S",
+        "classifier_sha256": "20252ff37aa696218b303800a8912504e8b96b23e556b67238d017a1a1d00fb9",
+        "mode": "custom_species",
+        "original_project_weights": false,
+        "probability_calibrated": false,
+        "class_count": 200,
+        "training_dataset": "CUB-200-2011",
+        "notice": "自训练鸟类分类权重；类别和效果以该权重的独立测试报告为准。"
+      },
+      "info_list": [
+        [
+          "Black footed Albatross",
+          1,
+          "",
+          ""
+        ]
+      ],
+      "annotated_image_returned": true
+    },
+    {
+      "image_id": 6,
+      "target": "001.Black_footed_Albatross",
+      "status": "detected",
+      "detections": [
+        {
+          "box": [
+            32.09,
+            54.19,
+            285.93,
+            446.2
+          ],
+          "crop_box": [
+            19,
+            34,
+            299,
+            466
+          ],
+          "detector_confidence": 0.8222913146018982,
+          "label": "001.Black_footed_Albatross",
+          "display_name": "Black footed Albatross",
+          "classifier_probability": 0.9537338614463806,
+          "accepted": true,
+          "top_k": [
+            {
+              "label": "001.Black_footed_Albatross",
+              "probability": 0.9537338614463806,
+              "bird_category": true
+            },
+            {
+              "label": "002.Laysan_Albatross",
+              "probability": 0.03314672410488129,
+              "bird_category": true
+            },
+            {
+              "label": "003.Sooty_Albatross",
+              "probability": 0.00778789771720767,
+              "bird_category": true
+            },
+            {
+              "label": "045.Northern_Fulmar",
+              "probability": 0.004892406519502401,
+              "bird_category": true
+            },
+            {
+              "label": "072.Pomarine_Jaeger",
+              "probability": 7.901121716713533e-05,
+              "bird_category": true
+            }
+          ]
+        }
+      ],
+      "model": {
+        "detector": "YOLOv8",
+        "detector_sha256": "f59b3d833e2ff32e194b5bb8e08d211dc7c5bdf144b90d2c8412c47ccfc83b36",
+        "classifier": "EfficientNetV2-S",
+        "classifier_sha256": "20252ff37aa696218b303800a8912504e8b96b23e556b67238d017a1a1d00fb9",
+        "mode": "custom_species",
+        "original_project_weights": false,
+        "probability_calibrated": false,
+        "class_count": 200,
+        "training_dataset": "CUB-200-2011",
+        "notice": "自训练鸟类分类权重；类别和效果以该权重的独立测试报告为准。"
+      },
+      "info_list": [
+        [
+          "Black footed Albatross",
+          1,
+          "",
+          ""
+        ]
+      ],
+      "annotated_image_returned": true
+    }
+  ],
+  "blank_image_no_fabricated_detections": true,
+  "invalid_upload_http400": true,
+  "scope": "Fixed first three test images; integration check, not accuracy estimate."
+}

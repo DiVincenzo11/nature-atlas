@@ -1,0 +1,53 @@
+{"stage": "training", "model": "finetuned", "start_epoch": 1793515156.3792953}
+{"epoch": 1, "train_loss": 3.9348467913179235, "validation_accuracy": 0.4116666666666667, "validation_macro_f1": 0.3674828690530257, "seconds": 24.877854299964383, "backbone_frozen": true}
+{"epoch": 2, "train_loss": 2.361611605784671, "validation_accuracy": 0.5125, "validation_macro_f1": 0.48010854489221366, "seconds": 4.756866100011393, "backbone_frozen": true}
+{"epoch": 3, "train_loss": 1.8092239309859166, "validation_accuracy": 0.52, "validation_macro_f1": 0.5014705997906462, "seconds": 4.685478399973363, "backbone_frozen": true}
+{"epoch": 4, "train_loss": 1.7879638276997336, "validation_accuracy": 0.6625, "validation_macro_f1": 0.6509401595846609, "seconds": 12.450267599895597, "backbone_frozen": false}
+{"epoch": 5, "train_loss": 0.7694023139386262, "validation_accuracy": 0.7375, "validation_macro_f1": 0.7326534111313524, "seconds": 11.718610299983993, "backbone_frozen": false}
+{"epoch": 6, "train_loss": 0.4432196550235979, "validation_accuracy": 0.75, "validation_macro_f1": 0.7469364597820481, "seconds": 11.97347899992019, "backbone_frozen": false}
+{"epoch": 7, "train_loss": 0.2692805775314955, "validation_accuracy": 0.7608333333333334, "validation_macro_f1": 0.7572181984681986, "seconds": 12.202155999839306, "backbone_frozen": false}
+{"epoch": 8, "train_loss": 0.18033066020192928, "validation_accuracy": 0.7683333333333333, "validation_macro_f1": 0.7631258006699184, "seconds": 11.392544400179759, "backbone_frozen": false}
+{"epoch": 9, "train_loss": 0.14024322961438035, "validation_accuracy": 0.7741666666666667, "validation_macro_f1": 0.770562080076786, "seconds": 11.242107099853456, "backbone_frozen": false}
+{"epoch": 10, "train_loss": 0.10918626773901964, "validation_accuracy": 0.7766666666666666, "validation_macro_f1": 0.774113404569287, "seconds": 11.253419000189751, "backbone_frozen": false}
+{"epoch": 11, "train_loss": 0.08209628677698887, "validation_accuracy": 0.7766666666666666, "validation_macro_f1": 0.7734819612754396, "seconds": 11.263332600006834, "backbone_frozen": false}
+{"epoch": 12, "train_loss": 0.07086624395961706, "validation_accuracy": 0.77, "validation_macro_f1": 0.7667635197190151, "seconds": 12.11626230017282, "backbone_frozen": false}
+{"epoch": 13, "train_loss": 0.06681477895778172, "validation_accuracy": 0.7891666666666667, "validation_macro_f1": 0.7865223409631303, "seconds": 11.475159599911422, "backbone_frozen": false}
+{"epoch": 14, "train_loss": 0.06430430634317917, "validation_accuracy": 0.7733333333333333, "validation_macro_f1": 0.770996519562309, "seconds": 11.674640600103885, "backbone_frozen": false}
+{"epoch": 15, "train_loss": 0.05990203741501161, "validation_accuracy": 0.7808333333333334, "validation_macro_f1": 0.7768752745792219, "seconds": 11.967573799891397, "backbone_frozen": false}
+{"stage": "training", "model": "frozen_head", "start_epoch": 1793515356.6404655}
+{"epoch": 1, "train_loss": 3.9348467913179235, "validation_accuracy": 0.4116666666666667, "validation_macro_f1": 0.3674828690530257, "seconds": 22.84326949995011, "backbone_frozen": true}
+{"epoch": 2, "train_loss": 2.361611605784671, "validation_accuracy": 0.5125, "validation_macro_f1": 0.48010854489221366, "seconds": 4.733806499978527, "backbone_frozen": true}
+{"epoch": 3, "train_loss": 1.8092239309859166, "validation_accuracy": 0.52, "validation_macro_f1": 0.5014705997906462, "seconds": 4.536442100070417, "backbone_frozen": true}
+{"epoch": 4, "train_loss": 1.5039096112344779, "validation_accuracy": 0.5583333333333333, "validation_macro_f1": 0.5453543716263396, "seconds": 4.489981099963188, "backbone_frozen": true}
+{"epoch": 5, "train_loss": 1.3085994312650817, "validation_accuracy": 0.5608333333333333, "validation_macro_f1": 0.5525550654353051, "seconds": 4.56104960013181, "backbone_frozen": true}
+{"epoch": 6, "train_loss": 1.1743618261083046, "validation_accuracy": 0.5916666666666667, "validation_macro_f1": 0.5775178299064422, "seconds": 4.7852891001384705, "backbone_frozen": true}
+{"epoch": 7, "train_loss": 1.0635173782787077, "validation_accuracy": 0.5975, "validation_macro_f1": 0.5843644078491467, "seconds": 4.5819019000045955, "backbone_frozen": true}
+{"epoch": 8, "train_loss": 0.9958481857266385, "validation_accuracy": 0.5966666666666667, "validation_macro_f1": 0.5886854640457582, "seconds": 4.676941099809483, "backbone_frozen": true}
+{"epoch": 9, "train_loss": 0.9357299279758817, "validation_accuracy": 0.6125, "validation_macro_f1": 0.6031028122466069, "seconds": 4.829737799940631, "backbone_frozen": true}
+{"epoch": 10, "train_loss": 0.8928663606786907, "validation_accuracy": 0.6166666666666667, "validation_macro_f1": 0.6089887370970962, "seconds": 4.8832338999491185, "backbone_frozen": true}
+{"epoch": 11, "train_loss": 0.853961704818716, "validation_accuracy": 0.6208333333333333, "validation_macro_f1": 0.6132799055519643, "seconds": 4.530153200030327, "backbone_frozen": true}
+{"epoch": 12, "train_loss": 0.8333255570283968, "validation_accuracy": 0.6183333333333333, "validation_macro_f1": 0.6110676842339247, "seconds": 4.481624600011855, "backbone_frozen": true}
+{"epoch": 13, "train_loss": 0.805803050609942, "validation_accuracy": 0.6166666666666667, "validation_macro_f1": 0.6090499721726502, "seconds": 4.626747499918565, "backbone_frozen": true}
+{"epoch": 14, "train_loss": 0.8000504120867303, "validation_accuracy": 0.62, "validation_macro_f1": 0.6122170280699692, "seconds": 4.6465779999271035, "backbone_frozen": true}
+{"epoch": 15, "train_loss": 0.8026276984511189, "validation_accuracy": 0.62, "validation_macro_f1": 0.6122170280699692, "seconds": 4.689342100173235, "backbone_frozen": true}
+Traceback (most recent call last):
+  File "<workspace>\outputs\nature-atlas\bird_service\scripts\run_cub_experiment.py", line 48, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "<workspace>\outputs\nature-atlas\bird_service\scripts\run_cub_experiment.py", line 40, in main
+    reports[name]=evaluate(a.out/name/'best.pt',manifest,'test',a.out/name/'test.json',a.device,a.batch,a.workers)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<workspace>\outputs\nature-atlas\bird_service\src\nature_birds\train.py", line 129, in evaluate
+    model,preprocessing,model_labels,mode=load_classifier(checkpoint,device)
+                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<workspace>\outputs\nature-atlas\bird_service\src\nature_birds\model.py", line 32, in load_classifier
+    if original.get('architecture')!='efficientnet_v2_s' or original.get('mode')!='custom_species':
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<workspace>\work\birds-cub200-v0.3.0\cuda-env\Lib\site-packages\torch\serialization.py", line 1524, in load
+    raise pickle.UnpicklingError(_get_wo_message(str(e))) from None
+_pickle.UnpicklingError: Weights only load failed. This file can still be loaded, to do so you have two options, do those steps only if you trust the source of the checkpoint.
+	(1) In PyTorch 2.6, we changed the default value of the `weights_only` argument in `torch.load` from `False` to `True`. Re-running `torch.load` with `weights_only` set to `False` will likely succeed, but it can result in arbitrary code execution. Do it only if you got the file from a trusted source.
+	(2) Alternatively, to load with `weights_only=True` please check the recommended steps in the following error message.
+	WeightsUnpickler error: Unsupported global: GLOBAL torch.torch_version.TorchVersion was not an allowed global by default. Please use `torch.serialization.add_safe_globals([torch.torch_version.TorchVersion])` or the `torch.serialization.safe_globals([torch.torch_version.TorchVersion])` context manager to allowlist this global if you trust this class/function.
+
+Check the documentation of torch.load to learn more about types accepted by default with weights_only https://pytorch.org/docs/stable/generated/torch.load.html.

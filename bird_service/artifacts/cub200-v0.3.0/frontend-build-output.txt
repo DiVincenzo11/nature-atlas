@@ -1,0 +1,229 @@
+
+> nature-atlas@0.1.0 build
+> vue-cli-service build
+
+Browserslist: caniuse-lite is outdated. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+All browser targets in the browserslist configuration have supported ES module.
+Therefore we don't build two separate bundles for differential loading.
+
+
+-  Building for production...
+Browserslist: caniuse-lite is outdated. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+Browserslist: caniuse-lite is outdated. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+Browserslist: caniuse-lite is outdated. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+Browserslist: caniuse-lite is outdated. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+Browserslist: caniuse-lite is outdated. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+Browserslist: caniuse-lite is outdated. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+Browserslist: caniuse-lite is outdated. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+Browserslist: caniuse-lite is outdated. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+Browserslist: caniuse-lite is outdated. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+Browserslist: caniuse-lite is outdated. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+Browserslist: caniuse-lite is outdated. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+Browserslist: caniuse-lite is outdated. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+Browserslist: caniuse-lite is outdated. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+Browserslist: caniuse-lite is outdated. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+Browserslist: caniuse-lite is outdated. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+Browserslist: caniuse-lite is outdated. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+Browserslist: caniuse-lite is outdated. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+Browserslist: caniuse-lite is outdated. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+Browserslist: caniuse-lite is outdated. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+Browserslist: caniuse-lite is outdated. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+Browserslist: caniuse-lite is outdated. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+Browserslist: caniuse-lite is outdated. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+Browserslist: caniuse-lite is outdated. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+Browserslist: caniuse-lite is outdated. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+Browserslist: caniuse-lite is outdated. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+Browserslist: caniuse-lite is outdated. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+Browserslist: caniuse-lite is outdated. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+Browserslist: caniuse-lite is outdated. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+Browserslist: caniuse-lite is outdated. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+Browserslist: caniuse-lite is outdated. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+Browserslist: caniuse-lite is outdated. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+Browserslist: caniuse-lite is outdated. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+Browserslist: caniuse-lite is outdated. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+Browserslist: caniuse-lite is outdated. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+Browserslist: caniuse-lite is outdated. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+Browserslist: caniuse-lite is outdated. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+Browserslist: caniuse-lite is outdated. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+Browserslist: caniuse-lite is outdated. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+Browserslist: caniuse-lite is outdated. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+Browserslist: caniuse-lite is outdated. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+Browserslist: caniuse-lite is outdated. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+Browserslist: caniuse-lite is outdated. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+Browserslist: caniuse-lite is outdated. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+Browserslist: caniuse-lite is outdated. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+ WARNING  Compiled with 2 warnings14:53:26
+
+ warning
+
+asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).
+This can impact web performance.
+Assets:
+  img/11.71fa96eb.png (332 KiB)
+  img/12.29495d6a.png (405 KiB)
+  img/15.078a033e.png (349 KiB)
+  img/13.5e105179.png (545 KiB)
+  img/cat.d422d34b.jpg (424 KiB)
+  img/16.cd1491c0.png (274 KiB)
+  img/动悉物语大logo.41dbade1.png (281 KiB)
+  js/chunk-vendors.084e08ac.js (923 KiB)
+  image/11.png (332 KiB)
+  image/12.png (405 KiB)
+  image/13.png (545 KiB)
+  image/15.png (349 KiB)
+  image/16.png (274 KiB)
+  image/cat.jpg (424 KiB)
+  image/cat2.jpg (411 KiB)
+  image/动悉物语大logo.png (281 KiB)
+
+ warning
+
+entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.
+Entrypoints:
+  app (1.13 MiB)
+      css/chunk-vendors.b68241f3.css
+      js/chunk-vendors.084e08ac.js
+      css/app.c93fc13a.css
+      js/app.4d5da677.js
+
+
+  File                                   Size              Gzipped
+
+  dist\js\chunk-vendors.084e08ac.js      922.97 KiB        260.55 KiB
+  dist\js\app.4d5da677.js                20.55 KiB         7.40 KiB
+  dist\js\836.3681cfa5.js                18.99 KiB         7.35 KiB
+  dist\js\654.aa43687e.js                7.15 KiB          2.64 KiB
+  dist\js\384.2a8767c3.js                6.95 KiB          2.14 KiB
+  dist\js\754.b6bc19a0.js                5.04 KiB          1.50 KiB
+  dist\js\324.a2aa7f47.js                4.36 KiB          1.93 KiB
+  dist\js\27.26086896.js                 4.08 KiB          1.73 KiB
+  dist\js\280.fd7f1719.js                3.13 KiB          0.92 KiB
+  dist\js\213.3ae5483b.js                2.88 KiB          0.83 KiB
+  dist\js\60.30b754a6.js                 2.88 KiB          0.83 KiB
+  dist\js\802.3853f3cf.js                2.68 KiB          0.82 KiB
+  dist\js\612.7215c5da.js                2.43 KiB          1.03 KiB
+  dist\js\909.be3e2ce8.js                2.09 KiB          0.74 KiB
+  dist\js\551.5609534c.js                2.00 KiB          0.92 KiB
+  dist\js\910.8d42b01f.js                1.99 KiB          0.91 KiB
+  dist\js\192.91bcbea4.js                1.97 KiB          0.91 KiB
+  dist\js\794.69f277c7.js                1.97 KiB          0.91 KiB
+  dist\js\679.87dc20bb.js                1.96 KiB          0.91 KiB
+  dist\js\976.97fb378e.js                1.85 KiB          0.89 KiB
+  dist\js\230.f6afbc25.js                1.24 KiB          0.67 KiB
+  dist\css\chunk-vendors.b68241f3.css    208.00 KiB        34.06 KiB
+  dist\css\app.c93fc13a.css              7.40 KiB          2.25 KiB
+  dist\css\384.2101d396.css              2.93 KiB          0.97 KiB
+  dist\css\836.4db62a8a.css              2.82 KiB          0.93 KiB
+  dist\css\654.2449250c.css              2.79 KiB          0.81 KiB
+  dist\css\324.b334b0e0.css              2.53 KiB          0.86 KiB
+  dist\css\612.86c8f132.css              2.45 KiB          0.75 KiB
+  dist\css\27.1e17fd63.css               1.46 KiB          0.53 KiB
+  dist\css\192.010b10ea.css              1.43 KiB          0.53 KiB
+  dist\css\679.4bc2dfb6.css              1.43 KiB          0.53 KiB
+  dist\css\794.03869446.css              1.43 KiB          0.53 KiB
+  dist\css\910.35739cc3.css              1.43 KiB          0.53 KiB
+  dist\css\976.aeb0b424.css              1.43 KiB          0.53 KiB
+  dist\css\754.bb1f4ba4.css              1.31 KiB          0.47 KiB
+  dist\css\280.df8f708a.css              0.96 KiB          0.36 KiB
+  dist\css\213.df1f4169.css              0.95 KiB          0.35 KiB
+  dist\css\60.696cf9e5.css               0.95 KiB          0.35 KiB
+  dist\css\802.c2b4d660.css              0.95 KiB          0.35 KiB
+  dist\css\909.7961873e.css              0.95 KiB          0.35 KiB
+  dist\css\551.40b00ba2.css              0.90 KiB          0.39 KiB
+  dist\css\230.7364cb3a.css              0.50 KiB          0.25 KiB
+
+  Images and other types of assets omitted.
+  Build at: 2026-11-01T06:53:26.215Z - Hash: 90ecef61bd2f013c - Time: 10223ms
+
+ DONE  Build complete. The dist directory is ready to be deployed.
+ INFO  Check out deployment instructions at https://cli.vuejs.org/guide/deployment.html

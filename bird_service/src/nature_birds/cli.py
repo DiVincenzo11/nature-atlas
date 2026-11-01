@@ -10,6 +10,7 @@ def main():
     p.add_argument("--threads",type=int,default=2)
     sub=p.add_subparsers(dest="command",required=True)
     f=sub.add_parser("fetch-models");f.add_argument("--out",type=Path,default=Path("models"))
+    f=sub.add_parser("export-classifier");f.add_argument("--checkpoint",type=Path,required=True);f.add_argument("--out",type=Path,required=True)
     for name in ["predict","serve"]:
         a=sub.add_parser(name)
         a.add_argument("--detector",type=Path,default=Path("models/yolov8n.pt"))
@@ -25,18 +26,27 @@ def main():
     a.add_argument("--epochs",type=int,default=10);a.add_argument("--batch",type=int,default=4)
     a.add_argument("--size",type=int,default=224);a.add_argument("--device",default="cpu")
     a.add_argument("--seed",type=int,default=42);a.add_argument("--random-init",action="store_true");a.add_argument("--freeze-backbone",action="store_true")
+    a.add_argument("--lr",type=float,default=1e-3);a.add_argument("--backbone-lr",type=float)
+    a.add_argument("--warmup-head-epochs",type=int,default=0);a.add_argument("--amp",action="store_true")
+    a.add_argument("--workers",type=int,default=0);a.add_argument("--init-imagenet",type=Path)
+    a.add_argument("--scheduler",choices=["constant","cosine"],default="constant")
     a=sub.add_parser("evaluate");a.add_argument("--manifest",type=Path,required=True);a.add_argument("--checkpoint",type=Path,required=True)
     a.add_argument("--out",type=Path,required=True);a.add_argument("--split",choices=["val","test"],default="test");a.add_argument("--device",default="cpu")
+    a.add_argument("--batch",type=int,default=4);a.add_argument("--workers",type=int,default=0)
     a=p.parse_args();torch.set_num_threads(a.threads)
     if a.command=="fetch-models":
         from .model import prepare_models
         result=prepare_models(a.out)
+    elif a.command=="export-classifier":
+        from .model import export_classifier
+        result=export_classifier(a.checkpoint,a.out)
     elif a.command=="train":
         from .train import train
-        result=train(a.manifest,a.out,a.epochs,a.batch,a.size,a.device,a.seed,not a.random_init,a.freeze_backbone)
+        result=train(a.manifest,a.out,a.epochs,a.batch,a.size,a.device,a.seed,not a.random_init,a.freeze_backbone,
+                     a.lr,a.backbone_lr,a.warmup_head_epochs,a.amp,a.workers,a.init_imagenet,a.scheduler)
     elif a.command=="evaluate":
         from .train import evaluate
-        result=evaluate(a.checkpoint,a.manifest,a.split,a.out,a.device)
+        result=evaluate(a.checkpoint,a.manifest,a.split,a.out,a.device,a.batch,a.workers)
     else:
         from .pipeline import BirdPipeline
         pipeline=BirdPipeline(a.detector,a.classifier,a.device,a.confidence,a.species_threshold)
@@ -50,7 +60,7 @@ def main():
         a.out.mkdir(parents=True,exist_ok=False)
         (a.out/"annotated.jpg").write_bytes(base64.b64decode(result.pop("image").split(",",1)[1]))
         (a.out/"result.json").write_text(json.dumps(result,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
-    print(json.dumps(result,ensure_ascii=False,indent=2))
+    print(json.dumps(result,ensure_ascii=True,indent=2))
 
 
 if __name__=="__main__":main()

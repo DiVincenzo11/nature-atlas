@@ -1,3 +1,6 @@
 * text=auto eol=lf
 *.jpg -text
 *.png -text
+# Preserve the exact bytes referenced by the recorded manifest/source hashes.
+artifacts/cub200-v0.3.0/manifest.jsonl -text whitespace=cr-at-eol
+artifacts/cub200-v0.3.0/source-at-training/*.py -text whitespace=cr-at-eol

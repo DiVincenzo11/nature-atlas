@@ -1,0 +1,27 @@
+{
+  "dataset": "CUB-200-2011",
+  "classes": 200,
+  "counts": {
+    "test": 5794,
+    "train": 4794,
+    "val": 1200
+  },
+  "seed": 42,
+  "epochs_each": 15,
+  "batch": 32,
+  "size": 224,
+  "workers": 4,
+  "device": "cuda:0",
+  "amp_training": true,
+  "classifier_lr": 0.001,
+  "backbone_lr": 5e-05,
+  "head_warmup_epochs": 3,
+  "scheduler": "cosine",
+  "weight_decay": 0.0001,
+  "initialization_sha256": "da468d40b6cf6708663924e45c225b9a042e50fdf7e76c04afe00450f85a3489",
+  "manifest_sha256": "c4d20f76e41e254fdc7eb6c0af1812e97a9cf49393fde7dae13f8405d3d27835",
+  "selection": "validation macro-F1; official test untouched during training/selection",
+  "comparison": "equal epoch budgets; frozen-head vs staged full fine-tuning; compute budgets differ",
+  "pretraining_warning": "CUB official source warns of possible overlap with ImageNet pretraining images.",
+  "original_competition_model_recovered": false
+}

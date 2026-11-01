@@ -1,0 +1,18 @@
+{
+  "verification_method": "Observed real Vue upload using browser UI; no replay or mocked predictions",
+  "url": "http://127.0.0.1:18901/scan/birdscan",
+  "test_image_id": 1,
+  "display_name": "Black footed Albatross",
+  "detector_confidence_percent_rounded": 40.5,
+  "classifier_probability_percent_rounded": 43.9,
+  "probability_calibrated": false,
+  "original_project_weights": false,
+  "python_model_runtime": {
+    "torch": "2.15.0+cpu",
+    "torchvision": "0.29.2+cpu",
+    "device": "cpu"
+  },
+  "local_screenshot_sha256": "2ddcae1a55c6244b9c98594078189fbfd9cf390e680cdc1f9748d66a1cb85ff8",
+  "screenshot_redistributed": false,
+  "reason": "CUB photograph copyright retained by original owner."
+}

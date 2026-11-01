@@ -1,0 +1,8 @@
+{
+  "source_archive_crc_verified": true,
+  "installed_from_clean_extraction": true,
+  "package_version": "0.3.0",
+  "tests_passed": 13,
+  "train_save_safe_reload_evaluate_diagnostic_passed": true,
+  "diagnostic_is_synthetic_not_accuracy_evidence": true
+}

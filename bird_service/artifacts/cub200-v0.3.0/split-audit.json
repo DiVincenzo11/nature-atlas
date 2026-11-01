@@ -1,0 +1,1673 @@
+{
+  "dataset": "CUB-200-2011",
+  "classes": 200,
+  "images": 11788,
+  "counts": {
+    "test": 5794,
+    "train": 4794,
+    "val": 1200
+  },
+  "per_class_counts": {
+    "001.Black_footed_Albatross": {
+      "test": 30,
+      "train": 24,
+      "val": 6
+    },
+    "002.Laysan_Albatross": {
+      "test": 30,
+      "train": 24,
+      "val": 6
+    },
+    "003.Sooty_Albatross": {
+      "train": 24,
+      "test": 28,
+      "val": 6
+    },
+    "004.Groove_billed_Ani": {
+      "test": 30,
+      "train": 24,
+      "val": 6
+    },
+    "005.Crested_Auklet": {
+      "test": 14,
+      "train": 24,
+      "val": 6
+    },
+    "006.Least_Auklet": {
+      "train": 24,
+      "val": 6,
+      "test": 11
+    },
+    "007.Parakeet_Auklet": {
+      "train": 24,
+      "test": 23,
+      "val": 6
+    },
+    "008.Rhinoceros_Auklet": {
+      "val": 6,
+      "train": 24,
+      "test": 18
+    },
+    "009.Brewer_Blackbird": {
+      "test": 29,
+      "train": 24,
+      "val": 6
+    },
+    "010.Red_winged_Blackbird": {
+      "train": 24,
+      "test": 30,
+      "val": 6
+    },
+    "011.Rusty_Blackbird": {
+      "train": 24,
+      "test": 30,
+      "val": 6
+    },
+    "012.Yellow_headed_Blackbird": {
+      "test": 26,
+      "train": 24,
+      "val": 6
+    },
+    "013.Bobolink": {
+      "train": 24,
+      "test": 30,
+      "val": 6
+    },
+    "014.Indigo_Bunting": {
+      "train": 24,
+      "test": 30,
+      "val": 6
+    },
+    "015.Lazuli_Bunting": {
+      "train": 24,
+      "val": 6,
+      "test": 28
+    },
+    "016.Painted_Bunting": {
+      "test": 28,
+      "train": 24,
+      "val": 6
+    },
+    "017.Cardinal": {
+      "test": 27,
+      "train": 24,
+      "val": 6
+    },
+    "018.Spotted_Catbird": {
+      "test": 15,
+      "train": 24,
+      "val": 6
+    },
+    "019.Gray_Catbird": {
+      "test": 29,
+      "train": 24,
+      "val": 6
+    },
+    "020.Yellow_breasted_Chat": {
+      "test": 29,
+      "train": 24,
+      "val": 6
+    },
+    "021.Eastern_Towhee": {
+      "test": 30,
+      "train": 24,
+      "val": 6
+    },
+    "022.Chuck_will_Widow": {
+      "test": 26,
+      "train": 24,
+      "val": 6
+    },
+    "023.Brandt_Cormorant": {
+      "train": 24,
+      "test": 29,
+      "val": 6
+    },
+    "024.Red_faced_Cormorant": {
+      "val": 6,
+      "test": 22,
+      "train": 24
+    },
+    "025.Pelagic_Cormorant": {
+      "train": 24,
+      "test": 30,
+      "val": 6
+    },
+    "026.Bronzed_Cowbird": {
+      "train": 24,
+      "val": 6,
+      "test": 30
+    },
+    "027.Shiny_Cowbird": {
+      "test": 30,
+      "val": 6,
+      "train": 24
+    },
+    "028.Brown_Creeper": {
+      "val": 6,
+      "test": 29,
+      "train": 24
+    },
+    "029.American_Crow": {
+      "train": 24,
+      "test": 30,
+      "val": 6
+    },
+    "030.Fish_Crow": {
+      "train": 24,
+      "test": 30,
+      "val": 6
+    },
+    "031.Black_billed_Cuckoo": {
+      "test": 30,
+      "train": 24,
+      "val": 6
+    },
+    "032.Mangrove_Cuckoo": {
+      "train": 24,
+      "test": 23,
+      "val": 6
+    },
+    "033.Yellow_billed_Cuckoo": {
+      "val": 6,
+      "test": 29,
+      "train": 24
+    },
+    "034.Gray_crowned_Rosy_Finch": {
+      "test": 29,
+      "train": 24,
+      "val": 6
+    },
+    "035.Purple_Finch": {
+      "train": 24,
+      "test": 30,
+      "val": 6
+    },
+    "036.Northern_Flicker": {
+      "test": 30,
+      "train": 24,
+      "val": 6
+    },
+    "037.Acadian_Flycatcher": {
+      "train": 24,
+      "val": 6,
+      "test": 29
+    },
+    "038.Great_Crested_Flycatcher": {
+      "test": 30,
+      "train": 24,
+      "val": 6
+    },
+    "039.Least_Flycatcher": {
+      "train": 24,
+      "val": 6,
+      "test": 29
+    },
+    "040.Olive_sided_Flycatcher": {
+      "test": 30,
+      "val": 6,
+      "train": 24
+    },
+    "041.Scissor_tailed_Flycatcher": {
+      "train": 24,
+      "test": 30,
+      "val": 6
+    },
+    "042.Vermilion_Flycatcher": {
+      "test": 30,
+      "train": 24,
+      "val": 6
+    },
+    "043.Yellow_bellied_Flycatcher": {
+      "test": 29,
+      "train": 24,
+      "val": 6
+    },
+    "044.Frigatebird": {
+      "test": 30,
+      "train": 24,
+      "val": 6
+    },
+    "045.Northern_Fulmar": {
+      "train": 24,
+      "test": 30,
+      "val": 6
+    },
+    "046.Gadwall": {
+      "test": 30,
+      "train": 24,
+      "val": 6
+    },
+    "047.American_Goldfinch": {
+      "test": 30,
+      "train": 24,
+      "val": 6
+    },
+    "048.European_Goldfinch": {
+      "test": 30,
+      "train": 24,
+      "val": 6
+    },
+    "049.Boat_tailed_Grackle": {
+      "test": 30,
+      "val": 6,
+      "train": 24
+    },
+    "050.Eared_Grebe": {
+      "test": 30,
+      "train": 24,
+      "val": 6
+    },
+    "051.Horned_Grebe": {
+      "val": 6,
+      "train": 24,
+      "test": 30
+    },
+    "052.Pied_billed_Grebe": {
+      "train": 24,
+      "test": 30,
+      "val": 6
+    },
+    "053.Western_Grebe": {
+      "train": 24,
+      "test": 30,
+      "val": 6
+    },
+    "054.Blue_Grosbeak": {
+      "train": 24,
+      "test": 30,
+      "val": 6
+    },
+    "055.Evening_Grosbeak": {
+      "test": 30,
+      "train": 24,
+      "val": 6
+    },
+    "056.Pine_Grosbeak": {
+      "test": 30,
+      "train": 24,
+      "val": 6
+    },
+    "057.Rose_breasted_Grosbeak": {
+      "val": 6,
+      "test": 30,
+      "train": 24
+    },
+    "058.Pigeon_Guillemot": {
+      "train": 24,
+      "val": 6,
+      "test": 28
+    },
+    "059.California_Gull": {
+      "test": 30,
+      "val": 6,
+      "train": 24
+    },
+    "060.Glaucous_winged_Gull": {
+      "test": 29,
+      "val": 6,
+      "train": 24
+    },
+    "061.Heermann_Gull": {
+      "test": 30,
+      "train": 24,
+      "val": 6
+    },
+    "062.Herring_Gull": {
+      "test": 30,
+      "train": 24,
+      "val": 6
+    },
+    "063.Ivory_Gull": {
+      "test": 30,
+      "train": 24,
+      "val": 6
+    },
+    "064.Ring_billed_Gull": {
+      "test": 30,
+      "train": 24,
+      "val": 6
+    },
+    "065.Slaty_backed_Gull": {
+      "test": 20,
+      "train": 24,
+      "val": 6
+    },
+    "066.Western_Gull": {
+      "test": 30,
+      "train": 24,
+      "val": 6
+    },
+    "067.Anna_Hummingbird": {
+      "test": 30,
+      "train": 24,
+      "val": 6
+    },
+    "068.Ruby_throated_Hummingbird": {
+      "train": 24,
+      "test": 30,
+      "val": 6
+    },
+    "069.Rufous_Hummingbird": {
+      "val": 6,
+      "test": 30,
+      "train": 24
+    },
+    "070.Green_Violetear": {
+      "train": 24,
+      "val": 6,
+      "test": 30
+    },
+    "071.Long_tailed_Jaeger": {
+      "test": 30,
+      "train": 24,
+      "val": 6
+    },
+    "072.Pomarine_Jaeger": {
+      "val": 6,
+      "test": 30,
+      "train": 24
+    },
+    "073.Blue_Jay": {
+      "train": 24,
+      "test": 30,
+      "val": 6
+    },
+    "074.Florida_Jay": {
+      "train": 24,
+      "test": 30,
+      "val": 6
+    },
+    "075.Green_Jay": {
+      "test": 27,
+      "val": 6,
+      "train": 24
+    },
+    "076.Dark_eyed_Junco": {
+      "train": 24,
+      "test": 30,
+      "val": 6
+    },
+    "077.Tropical_Kingbird": {
+      "train": 24,
+      "val": 6,
+      "test": 30
+    },
+    "078.Gray_Kingbird": {
+      "val": 6,
+      "train": 24,
+      "test": 29
+    },
+    "079.Belted_Kingfisher": {
+      "train": 24,
+      "test": 30,
+      "val": 6
+    },
+    "080.Green_Kingfisher": {
+      "test": 30,
+      "val": 6,
+      "train": 24
+    },
+    "081.Pied_Kingfisher": {
+      "test": 30,
+      "train": 24,
+      "val": 6
+    },
+    "082.Ringed_Kingfisher": {
+      "test": 30,
+      "train": 24,
+      "val": 6
+    },
+    "083.White_breasted_Kingfisher": {
+      "test": 30,
+      "train": 24,
+      "val": 6
+    },
+    "084.Red_legged_Kittiwake": {
+      "val": 6,
+      "test": 23,
+      "train": 24
+    },
+    "085.Horned_Lark": {
+      "train": 24,
+      "test": 30,
+      "val": 6
+    },
+    "086.Pacific_Loon": {
+      "test": 30,
+      "train": 24,
+      "val": 6
+    },
+    "087.Mallard": {
+      "test": 30,
+      "val": 6,
+      "train": 24
+    },
+    "088.Western_Meadowlark": {
+      "train": 24,
+      "val": 6,
+      "test": 30
+    },
+    "089.Hooded_Merganser": {
+      "test": 30,
+      "train": 24,
+      "val": 6
+    },
+    "090.Red_breasted_Merganser": {
+      "train": 24,
+      "test": 30,
+      "val": 6
+    },
+    "091.Mockingbird": {
+      "test": 30,
+      "train": 24,
+      "val": 6
+    },
+    "092.Nighthawk": {
+      "test": 30,
+      "train": 24,
+      "val": 6
+    },
+    "093.Clark_Nutcracker": {
+      "test": 30,
+      "train": 24,
+      "val": 6
+    },
+    "094.White_breasted_Nuthatch": {
+      "test": 30,
+      "val": 6,
+      "train": 24
+    },
+    "095.Baltimore_Oriole": {
+      "test": 30,
+      "train": 24,
+      "val": 6
+    },
+    "096.Hooded_Oriole": {
+      "val": 6,
+      "test": 30,
+      "train": 24
+    },
+    "097.Orchard_Oriole": {
+      "test": 29,
+      "train": 24,
+      "val": 6
+    },
+    "098.Scott_Oriole": {
+      "test": 30,
+      "train": 24,
+      "val": 6
+    },
+    "099.Ovenbird": {
+      "train": 24,
+      "test": 30,
+      "val": 6
+    },
+    "100.Brown_Pelican": {
+      "test": 30,
+      "train": 24,
+      "val": 6
+    },
+    "101.White_Pelican": {
+      "test": 20,
+      "train": 24,
+      "val": 6
+    },
+    "102.Western_Wood_Pewee": {
+      "test": 30,
+      "train": 24,
+      "val": 6
+    },
+    "103.Sayornis": {
+      "test": 30,
+      "train": 24,
+      "val": 6
+    },
+    "104.American_Pipit": {
+      "train": 24,
+      "test": 30,
+      "val": 6
+    },
+    "105.Whip_poor_Will": {
+      "val": 6,
+      "train": 24,
+      "test": 19
+    },
+    "106.Horned_Puffin": {
+      "val": 6,
+      "test": 30,
+      "train": 24
+    },
+    "107.Common_Raven": {
+      "test": 30,
+      "train": 23,
+      "val": 6
+    },
+    "108.White_necked_Raven": {
+      "test": 30,
+      "train": 24,
+      "val": 6
+    },
+    "109.American_Redstart": {
+      "test": 30,
+      "val": 6,
+      "train": 24
+    },
+    "110.Geococcyx": {
+      "train": 24,
+      "test": 30,
+      "val": 6
+    },
+    "111.Loggerhead_Shrike": {
+      "val": 6,
+      "train": 24,
+      "test": 30
+    },
+    "112.Great_Grey_Shrike": {
+      "train": 24,
+      "test": 30,
+      "val": 6
+    },
+    "113.Baird_Sparrow": {
+      "train": 24,
+      "val": 6,
+      "test": 20
+    },
+    "114.Black_throated_Sparrow": {
+      "test": 30,
+      "train": 24,
+      "val": 6
+    },
+    "115.Brewer_Sparrow": {
+      "test": 29,
+      "train": 24,
+      "val": 6
+    },
+    "116.Chipping_Sparrow": {
+      "train": 24,
+      "test": 30,
+      "val": 6
+    },
+    "117.Clay_colored_Sparrow": {
+      "train": 24,
+      "test": 29,
+      "val": 6
+    },
+    "118.House_Sparrow": {
+      "test": 30,
+      "train": 24,
+      "val": 6
+    },
+    "119.Field_Sparrow": {
+      "test": 29,
+      "train": 24,
+      "val": 6
+    },
+    "120.Fox_Sparrow": {
+      "test": 30,
+      "train": 24,
+      "val": 6
+    },
+    "121.Grasshopper_Sparrow": {
+      "test": 30,
+      "train": 24,
+      "val": 6
+    },
+    "122.Harris_Sparrow": {
+      "train": 24,
+      "test": 30,
+      "val": 6
+    },
+    "123.Henslow_Sparrow": {
+      "test": 30,
+      "train": 24,
+      "val": 6
+    },
+    "124.Le_Conte_Sparrow": {
+      "test": 29,
+      "train": 24,
+      "val": 6
+    },
+    "125.Lincoln_Sparrow": {
+      "test": 29,
+      "train": 24,
+      "val": 6
+    },
+    "126.Nelson_Sharp_tailed_Sparrow": {
+      "val": 6,
+      "test": 30,
+      "train": 23
+    },
+    "127.Savannah_Sparrow": {
+      "test": 30,
+      "train": 24,
+      "val": 6
+    },
+    "128.Seaside_Sparrow": {
+      "test": 30,
+      "train": 24,
+      "val": 6
+    },
+    "129.Song_Sparrow": {
+      "test": 30,
+      "val": 6,
+      "train": 24
+    },
+    "130.Tree_Sparrow": {
+      "train": 24,
+      "val": 6,
+      "test": 30
+    },
+    "131.Vesper_Sparrow": {
+      "train": 24,
+      "test": 30,
+      "val": 6
+    },
+    "132.White_crowned_Sparrow": {
+      "train": 24,
+      "test": 30,
+      "val": 6
+    },
+    "133.White_throated_Sparrow": {
+      "test": 30,
+      "train": 24,
+      "val": 6
+    },
+    "134.Cape_Glossy_Starling": {
+      "test": 30,
+      "train": 24,
+      "val": 6
+    },
+    "135.Bank_Swallow": {
+      "val": 6,
+      "train": 23,
+      "test": 30
+    },
+    "136.Barn_Swallow": {
+      "test": 30,
+      "train": 24,
+      "val": 6
+    },
+    "137.Cliff_Swallow": {
+      "test": 30,
+      "val": 6,
+      "train": 24
+    },
+    "138.Tree_Swallow": {
+      "train": 24,
+      "test": 30,
+      "val": 6
+    },
+    "139.Scarlet_Tanager": {
+      "test": 30,
+      "train": 24,
+      "val": 6
+    },
+    "140.Summer_Tanager": {
+      "test": 30,
+      "train": 24,
+      "val": 6
+    },
+    "141.Artic_Tern": {
+      "train": 23,
+      "test": 29,
+      "val": 6
+    },
+    "142.Black_Tern": {
+      "test": 30,
+      "train": 24,
+      "val": 6
+    },
+    "143.Caspian_Tern": {
+      "train": 24,
+      "test": 30,
+      "val": 6
+    },
+    "144.Common_Tern": {
+      "test": 30,
+      "train": 24,
+      "val": 6
+    },
+    "145.Elegant_Tern": {
+      "test": 30,
+      "train": 24,
+      "val": 6
+    },
+    "146.Forsters_Tern": {
+      "test": 30,
+      "train": 24,
+      "val": 6
+    },
+    "147.Least_Tern": {
+      "train": 24,
+      "test": 30,
+      "val": 6
+    },
+    "148.Green_tailed_Towhee": {
+      "test": 30,
+      "train": 24,
+      "val": 6
+    },
+    "149.Brown_Thrasher": {
+      "train": 24,
+      "test": 29,
+      "val": 6
+    },
+    "150.Sage_Thrasher": {
+      "test": 30,
+      "val": 6,
+      "train": 24
+    },
+    "151.Black_capped_Vireo": {
+      "train": 24,
+      "val": 6,
+      "test": 21
+    },
+    "152.Blue_headed_Vireo": {
+      "test": 30,
+      "val": 6,
+      "train": 24
+    },
+    "153.Philadelphia_Vireo": {
+      "test": 29,
+      "val": 6,
+      "train": 24
+    },
+    "154.Red_eyed_Vireo": {
+      "test": 30,
+      "train": 24,
+      "val": 6
+    },
+    "155.Warbling_Vireo": {
+      "test": 30,
+      "train": 24,
+      "val": 6
+    },
+    "156.White_eyed_Vireo": {
+      "test": 30,
+      "train": 24,
+      "val": 6
+    },
+    "157.Yellow_throated_Vireo": {
+      "test": 29,
+      "train": 24,
+      "val": 6
+    },
+    "158.Bay_breasted_Warbler": {
+      "train": 24,
+      "test": 30,
+      "val": 6
+    },
+    "159.Black_and_white_Warbler": {
+      "train": 24,
+      "val": 6,
+      "test": 30
+    },
+    "160.Black_throated_Blue_Warbler": {
+      "test": 29,
+      "val": 6,
+      "train": 24
+    },
+    "161.Blue_winged_Warbler": {
+      "train": 24,
+      "test": 30,
+      "val": 6
+    },
+    "162.Canada_Warbler": {
+      "test": 30,
+      "val": 6,
+      "train": 24
+    },
+    "163.Cape_May_Warbler": {
+      "train": 24,
+      "val": 6,
+      "test": 30
+    },
+    "164.Cerulean_Warbler": {
+      "test": 30,
+      "train": 24,
+      "val": 6
+    },
+    "165.Chestnut_sided_Warbler": {
+      "train": 24,
+      "test": 30,
+      "val": 6
+    },
+    "166.Golden_winged_Warbler": {
+      "test": 29,
+      "val": 6,
+      "train": 24
+    },
+    "167.Hooded_Warbler": {
+      "train": 24,
+      "test": 30,
+      "val": 6
+    },
+    "168.Kentucky_Warbler": {
+      "test": 29,
+      "train": 24,
+      "val": 6
+    },
+    "169.Magnolia_Warbler": {
+      "test": 29,
+      "train": 24,
+      "val": 6
+    },
+    "170.Mourning_Warbler": {
+      "val": 6,
+      "test": 30,
+      "train": 24
+    },
+    "171.Myrtle_Warbler": {
+      "train": 24,
+      "test": 30,
+      "val": 6
+    },
+    "172.Nashville_Warbler": {
+      "test": 30,
+      "train": 24,
+      "val": 6
+    },
+    "173.Orange_crowned_Warbler": {
+      "train": 24,
+      "test": 30,
+      "val": 6
+    },
+    "174.Palm_Warbler": {
+      "test": 30,
+      "train": 24,
+      "val": 6
+    },
+    "175.Pine_Warbler": {
+      "train": 24,
+      "test": 30,
+      "val": 6
+    },
+    "176.Prairie_Warbler": {
+      "test": 30,
+      "val": 6,
+      "train": 24
+    },
+    "177.Prothonotary_Warbler": {
+      "train": 24,
+      "test": 30,
+      "val": 6
+    },
+    "178.Swainson_Warbler": {
+      "train": 24,
+      "val": 6,
+      "test": 26
+    },
+    "179.Tennessee_Warbler": {
+      "train": 24,
+      "test": 29,
+      "val": 6
+    },
+    "180.Wilson_Warbler": {
+      "test": 30,
+      "train": 24,
+      "val": 6
+    },
+    "181.Worm_eating_Warbler": {
+      "train": 24,
+      "test": 29,
+      "val": 6
+    },
+    "182.Yellow_Warbler": {
+      "test": 30,
+      "train": 24,
+      "val": 6
+    },
+    "183.Northern_Waterthrush": {
+      "test": 30,
+      "train": 24,
+      "val": 6
+    },
+    "184.Louisiana_Waterthrush": {
+      "test": 30,
+      "train": 24,
+      "val": 6
+    },
+    "185.Bohemian_Waxwing": {
+      "train": 24,
+      "test": 30,
+      "val": 6
+    },
+    "186.Cedar_Waxwing": {
+      "test": 30,
+      "val": 6,
+      "train": 24
+    },
+    "187.American_Three_toed_Woodpecker": {
+      "test": 20,
+      "train": 24,
+      "val": 6
+    },
+    "188.Pileated_Woodpecker": {
+      "test": 30,
+      "train": 24,
+      "val": 6
+    },
+    "189.Red_bellied_Woodpecker": {
+      "train": 24,
+      "val": 6,
+      "test": 30
+    },
+    "190.Red_cockaded_Woodpecker": {
+      "val": 6,
+      "test": 29,
+      "train": 23
+    },
+    "191.Red_headed_Woodpecker": {
+      "test": 30,
+      "train": 24,
+      "val": 6
+    },
+    "192.Downy_Woodpecker": {
+      "test": 30,
+      "train": 24,
+      "val": 6
+    },
+    "193.Bewick_Wren": {
+      "test": 30,
+      "train": 24,
+      "val": 6
+    },
+    "194.Cactus_Wren": {
+      "test": 30,
+      "val": 6,
+      "train": 24
+    },
+    "195.Carolina_Wren": {
+      "test": 30,
+      "train": 24,
+      "val": 6
+    },
+    "196.House_Wren": {
+      "train": 23,
+      "test": 30,
+      "val": 6
+    },
+    "197.Marsh_Wren": {
+      "test": 30,
+      "train": 24,
+      "val": 6
+    },
+    "198.Rock_Wren": {
+      "test": 30,
+      "train": 24,
+      "val": 6
+    },
+    "199.Winter_Wren": {
+      "train": 24,
+      "test": 30,
+      "val": 6
+    },
+    "200.Common_Yellowthroat": {
+      "test": 30,
+      "train": 24,
+      "val": 6
+    }
+  },
+  "split_seed": 42,
+  "validation_per_class": 6,
+  "official_test_unchanged": true,
+  "exact_pixel_cross_split_duplicates": 0,
+  "group_scope": "one official source image ID; not individual/photographer-disjoint",
+  "pretraining_warning": "CUB official source warns of possible overlap with ImageNet pretraining images.",
+  "manifest_sha256": "c4d20f76e41e254fdc7eb6c0af1812e97a9cf49393fde7dae13f8405d3d27835",
+  "clipped_boxes": [
+    {
+      "image_id": 47,
+      "original_xyxy": [
+        5.0,
+        127.0,
+        501.0,
+        258.0
+      ],
+      "clipped_xyxy": [
+        5.0,
+        127.0,
+        500,
+        258.0
+      ]
+    },
+    {
+      "image_id": 757,
+      "original_xyxy": [
+        58.0,
+        70.0,
+        274.0,
+        376.0
+      ],
+      "clipped_xyxy": [
+        58.0,
+        70.0,
+        274.0,
+        375
+      ]
+    },
+    {
+      "image_id": 960,
+      "original_xyxy": [
+        27.0,
+        6.0,
+        175.0,
+        133.0
+      ],
+      "clipped_xyxy": [
+        27.0,
+        6.0,
+        175.0,
+        131
+      ]
+    },
+    {
+      "image_id": 976,
+      "original_xyxy": [
+        4.0,
+        4.0,
+        146.0,
+        239.0
+      ],
+      "clipped_xyxy": [
+        4.0,
+        4.0,
+        146.0,
+        238
+      ]
+    },
+    {
+      "image_id": 999,
+      "original_xyxy": [
+        2.0,
+        69.0,
+        459.0,
+        380.0
+      ],
+      "clipped_xyxy": [
+        2.0,
+        69.0,
+        459.0,
+        375
+      ]
+    },
+    {
+      "image_id": 1218,
+      "original_xyxy": [
+        92.0,
+        51.0,
+        532.0,
+        354.0
+      ],
+      "clipped_xyxy": [
+        92.0,
+        51.0,
+        500,
+        354.0
+      ]
+    },
+    {
+      "image_id": 1228,
+      "original_xyxy": [
+        94.0,
+        72.0,
+        463.0,
+        348.0
+      ],
+      "clipped_xyxy": [
+        94.0,
+        72.0,
+        463.0,
+        347
+      ]
+    },
+    {
+      "image_id": 1233,
+      "original_xyxy": [
+        123.0,
+        22.0,
+        333.0,
+        334.0
+      ],
+      "clipped_xyxy": [
+        123.0,
+        22.0,
+        333.0,
+        333
+      ]
+    },
+    {
+      "image_id": 1592,
+      "original_xyxy": [
+        29.0,
+        136.0,
+        358.0,
+        304.0
+      ],
+      "clipped_xyxy": [
+        29.0,
+        136.0,
+        357,
+        304.0
+      ]
+    },
+    {
+      "image_id": 1727,
+      "original_xyxy": [
+        119.0,
+        44.0,
+        240.0,
+        375.0
+      ],
+      "clipped_xyxy": [
+        119.0,
+        44.0,
+        240.0,
+        374
+      ]
+    },
+    {
+      "image_id": 1796,
+      "original_xyxy": [
+        23.0,
+        12.0,
+        321.0,
+        345.0
+      ],
+      "clipped_xyxy": [
+        23.0,
+        12.0,
+        320,
+        345.0
+      ]
+    },
+    {
+      "image_id": 1956,
+      "original_xyxy": [
+        110.0,
+        165.0,
+        263.0,
+        318.0
+      ],
+      "clipped_xyxy": [
+        110.0,
+        165.0,
+        262,
+        318.0
+      ]
+    },
+    {
+      "image_id": 2540,
+      "original_xyxy": [
+        115.0,
+        34.0,
+        501.0,
+        283.0
+      ],
+      "clipped_xyxy": [
+        115.0,
+        34.0,
+        500,
+        283.0
+      ]
+    },
+    {
+      "image_id": 2775,
+      "original_xyxy": [
+        15.0,
+        18.0,
+        501.0,
+        351.0
+      ],
+      "clipped_xyxy": [
+        15.0,
+        18.0,
+        500,
+        351.0
+      ]
+    },
+    {
+      "image_id": 3412,
+      "original_xyxy": [
+        204.0,
+        120.0,
+        499.0,
+        377.0
+      ],
+      "clipped_xyxy": [
+        204.0,
+        120.0,
+        499.0,
+        375
+      ]
+    },
+    {
+      "image_id": 3491,
+      "original_xyxy": [
+        65.0,
+        44.0,
+        501.0,
+        378.0
+      ],
+      "clipped_xyxy": [
+        65.0,
+        44.0,
+        500,
+        378.0
+      ]
+    },
+    {
+      "image_id": 3727,
+      "original_xyxy": [
+        129.0,
+        44.0,
+        500.0,
+        333.0
+      ],
+      "clipped_xyxy": [
+        129.0,
+        44.0,
+        500,
+        332
+      ]
+    },
+    {
+      "image_id": 3733,
+      "original_xyxy": [
+        9.0,
+        47.0,
+        450.0,
+        379.0
+      ],
+      "clipped_xyxy": [
+        9.0,
+        47.0,
+        450.0,
+        378
+      ]
+    },
+    {
+      "image_id": 4373,
+      "original_xyxy": [
+        5.0,
+        63.0,
+        334.0,
+        498.0
+      ],
+      "clipped_xyxy": [
+        5.0,
+        63.0,
+        333,
+        498.0
+      ]
+    },
+    {
+      "image_id": 5007,
+      "original_xyxy": [
+        34.0,
+        33.0,
+        472.0,
+        359.0
+      ],
+      "clipped_xyxy": [
+        34.0,
+        33.0,
+        472.0,
+        333
+      ]
+    },
+    {
+      "image_id": 5069,
+      "original_xyxy": [
+        56.0,
+        67.0,
+        402.0,
+        376.0
+      ],
+      "clipped_xyxy": [
+        56.0,
+        67.0,
+        402.0,
+        375
+      ]
+    },
+    {
+      "image_id": 5907,
+      "original_xyxy": [
+        1.0,
+        5.0,
+        328.0,
+        501.0
+      ],
+      "clipped_xyxy": [
+        1.0,
+        5.0,
+        328.0,
+        500
+      ]
+    },
+    {
+      "image_id": 6096,
+      "original_xyxy": [
+        1.0,
+        40.0,
+        461.0,
+        334.0
+      ],
+      "clipped_xyxy": [
+        1.0,
+        40.0,
+        461.0,
+        333
+      ]
+    },
+    {
+      "image_id": 6156,
+      "original_xyxy": [
+        16.0,
+        69.0,
+        382.0,
+        336.0
+      ],
+      "clipped_xyxy": [
+        16.0,
+        69.0,
+        382.0,
+        334
+      ]
+    },
+    {
+      "image_id": 6273,
+      "original_xyxy": [
+        3.0,
+        31.0,
+        390.0,
+        335.0
+      ],
+      "clipped_xyxy": [
+        3.0,
+        31.0,
+        390.0,
+        333
+      ]
+    },
+    {
+      "image_id": 6709,
+      "original_xyxy": [
+        22.0,
+        70.0,
+        362.0,
+        501.0
+      ],
+      "clipped_xyxy": [
+        22.0,
+        70.0,
+        362.0,
+        500
+      ]
+    },
+    {
+      "image_id": 7819,
+      "original_xyxy": [
+        89.0,
+        60.0,
+        308.0,
+        334.0
+      ],
+      "clipped_xyxy": [
+        89.0,
+        60.0,
+        308.0,
+        333
+      ]
+    },
+    {
+      "image_id": 7829,
+      "original_xyxy": [
+        209.0,
+        49.0,
+        491.0,
+        334.0
+      ],
+      "clipped_xyxy": [
+        209.0,
+        49.0,
+        491.0,
+        333
+      ]
+    },
+    {
+      "image_id": 9760,
+      "original_xyxy": [
+        137.0,
+        106.0,
+        501.0,
+        340.0
+      ],
+      "clipped_xyxy": [
+        137.0,
+        106.0,
+        500,
+        340.0
+      ]
+    },
+    {
+      "image_id": 9762,
+      "original_xyxy": [
+        35.0,
+        16.0,
+        197.0,
+        117.0
+      ],
+      "clipped_xyxy": [
+        35.0,
+        16.0,
+        194,
+        117.0
+      ]
+    }
+  ],
+  "label_display_names": {
+    "001.Black_footed_Albatross": "Black footed Albatross",
+    "002.Laysan_Albatross": "Laysan Albatross",
+    "003.Sooty_Albatross": "Sooty Albatross",
+    "004.Groove_billed_Ani": "Groove billed Ani",
+    "005.Crested_Auklet": "Crested Auklet",
+    "006.Least_Auklet": "Least Auklet",
+    "007.Parakeet_Auklet": "Parakeet Auklet",
+    "008.Rhinoceros_Auklet": "Rhinoceros Auklet",
+    "009.Brewer_Blackbird": "Brewer Blackbird",
+    "010.Red_winged_Blackbird": "Red winged Blackbird",
+    "011.Rusty_Blackbird": "Rusty Blackbird",
+    "012.Yellow_headed_Blackbird": "Yellow headed Blackbird",
+    "013.Bobolink": "Bobolink",
+    "014.Indigo_Bunting": "Indigo Bunting",
+    "015.Lazuli_Bunting": "Lazuli Bunting",
+    "016.Painted_Bunting": "Painted Bunting",
+    "017.Cardinal": "Cardinal",
+    "018.Spotted_Catbird": "Spotted Catbird",
+    "019.Gray_Catbird": "Gray Catbird",
+    "020.Yellow_breasted_Chat": "Yellow breasted Chat",
+    "021.Eastern_Towhee": "Eastern Towhee",
+    "022.Chuck_will_Widow": "Chuck will Widow",
+    "023.Brandt_Cormorant": "Brandt Cormorant",
+    "024.Red_faced_Cormorant": "Red faced Cormorant",
+    "025.Pelagic_Cormorant": "Pelagic Cormorant",
+    "026.Bronzed_Cowbird": "Bronzed Cowbird",
+    "027.Shiny_Cowbird": "Shiny Cowbird",
+    "028.Brown_Creeper": "Brown Creeper",
+    "029.American_Crow": "American Crow",
+    "030.Fish_Crow": "Fish Crow",
+    "031.Black_billed_Cuckoo": "Black billed Cuckoo",
+    "032.Mangrove_Cuckoo": "Mangrove Cuckoo",
+    "033.Yellow_billed_Cuckoo": "Yellow billed Cuckoo",
+    "034.Gray_crowned_Rosy_Finch": "Gray crowned Rosy Finch",
+    "035.Purple_Finch": "Purple Finch",
+    "036.Northern_Flicker": "Northern Flicker",
+    "037.Acadian_Flycatcher": "Acadian Flycatcher",
+    "038.Great_Crested_Flycatcher": "Great Crested Flycatcher",
+    "039.Least_Flycatcher": "Least Flycatcher",
+    "040.Olive_sided_Flycatcher": "Olive sided Flycatcher",
+    "041.Scissor_tailed_Flycatcher": "Scissor tailed Flycatcher",
+    "042.Vermilion_Flycatcher": "Vermilion Flycatcher",
+    "043.Yellow_bellied_Flycatcher": "Yellow bellied Flycatcher",
+    "044.Frigatebird": "Frigatebird",
+    "045.Northern_Fulmar": "Northern Fulmar",
+    "046.Gadwall": "Gadwall",
+    "047.American_Goldfinch": "American Goldfinch",
+    "048.European_Goldfinch": "European Goldfinch",
+    "049.Boat_tailed_Grackle": "Boat tailed Grackle",
+    "050.Eared_Grebe": "Eared Grebe",
+    "051.Horned_Grebe": "Horned Grebe",
+    "052.Pied_billed_Grebe": "Pied billed Grebe",
+    "053.Western_Grebe": "Western Grebe",
+    "054.Blue_Grosbeak": "Blue Grosbeak",
+    "055.Evening_Grosbeak": "Evening Grosbeak",
+    "056.Pine_Grosbeak": "Pine Grosbeak",
+    "057.Rose_breasted_Grosbeak": "Rose breasted Grosbeak",
+    "058.Pigeon_Guillemot": "Pigeon Guillemot",
+    "059.California_Gull": "California Gull",
+    "060.Glaucous_winged_Gull": "Glaucous winged Gull",
+    "061.Heermann_Gull": "Heermann Gull",
+    "062.Herring_Gull": "Herring Gull",
+    "063.Ivory_Gull": "Ivory Gull",
+    "064.Ring_billed_Gull": "Ring billed Gull",
+    "065.Slaty_backed_Gull": "Slaty backed Gull",
+    "066.Western_Gull": "Western Gull",
+    "067.Anna_Hummingbird": "Anna Hummingbird",
+    "068.Ruby_throated_Hummingbird": "Ruby throated Hummingbird",
+    "069.Rufous_Hummingbird": "Rufous Hummingbird",
+    "070.Green_Violetear": "Green Violetear",
+    "071.Long_tailed_Jaeger": "Long tailed Jaeger",
+    "072.Pomarine_Jaeger": "Pomarine Jaeger",
+    "073.Blue_Jay": "Blue Jay",
+    "074.Florida_Jay": "Florida Jay",
+    "075.Green_Jay": "Green Jay",
+    "076.Dark_eyed_Junco": "Dark eyed Junco",
+    "077.Tropical_Kingbird": "Tropical Kingbird",
+    "078.Gray_Kingbird": "Gray Kingbird",
+    "079.Belted_Kingfisher": "Belted Kingfisher",
+    "080.Green_Kingfisher": "Green Kingfisher",
+    "081.Pied_Kingfisher": "Pied Kingfisher",
+    "082.Ringed_Kingfisher": "Ringed Kingfisher",
+    "083.White_breasted_Kingfisher": "White breasted Kingfisher",
+    "084.Red_legged_Kittiwake": "Red legged Kittiwake",
+    "085.Horned_Lark": "Horned Lark",
+    "086.Pacific_Loon": "Pacific Loon",
+    "087.Mallard": "Mallard",
+    "088.Western_Meadowlark": "Western Meadowlark",
+    "089.Hooded_Merganser": "Hooded Merganser",
+    "090.Red_breasted_Merganser": "Red breasted Merganser",
+    "091.Mockingbird": "Mockingbird",
+    "092.Nighthawk": "Nighthawk",
+    "093.Clark_Nutcracker": "Clark Nutcracker",
+    "094.White_breasted_Nuthatch": "White breasted Nuthatch",
+    "095.Baltimore_Oriole": "Baltimore Oriole",
+    "096.Hooded_Oriole": "Hooded Oriole",
+    "097.Orchard_Oriole": "Orchard Oriole",
+    "098.Scott_Oriole": "Scott Oriole",
+    "099.Ovenbird": "Ovenbird",
+    "100.Brown_Pelican": "Brown Pelican",
+    "101.White_Pelican": "White Pelican",
+    "102.Western_Wood_Pewee": "Western Wood Pewee",
+    "103.Sayornis": "Sayornis",
+    "104.American_Pipit": "American Pipit",
+    "105.Whip_poor_Will": "Whip poor Will",
+    "106.Horned_Puffin": "Horned Puffin",
+    "107.Common_Raven": "Common Raven",
+    "108.White_necked_Raven": "White necked Raven",
+    "109.American_Redstart": "American Redstart",
+    "110.Geococcyx": "Geococcyx",
+    "111.Loggerhead_Shrike": "Loggerhead Shrike",
+    "112.Great_Grey_Shrike": "Great Grey Shrike",
+    "113.Baird_Sparrow": "Baird Sparrow",
+    "114.Black_throated_Sparrow": "Black throated Sparrow",
+    "115.Brewer_Sparrow": "Brewer Sparrow",
+    "116.Chipping_Sparrow": "Chipping Sparrow",
+    "117.Clay_colored_Sparrow": "Clay colored Sparrow",
+    "118.House_Sparrow": "House Sparrow",
+    "119.Field_Sparrow": "Field Sparrow",
+    "120.Fox_Sparrow": "Fox Sparrow",
+    "121.Grasshopper_Sparrow": "Grasshopper Sparrow",
+    "122.Harris_Sparrow": "Harris Sparrow",
+    "123.Henslow_Sparrow": "Henslow Sparrow",
+    "124.Le_Conte_Sparrow": "Le Conte Sparrow",
+    "125.Lincoln_Sparrow": "Lincoln Sparrow",
+    "126.Nelson_Sharp_tailed_Sparrow": "Nelson Sharp tailed Sparrow",
+    "127.Savannah_Sparrow": "Savannah Sparrow",
+    "128.Seaside_Sparrow": "Seaside Sparrow",
+    "129.Song_Sparrow": "Song Sparrow",
+    "130.Tree_Sparrow": "Tree Sparrow",
+    "131.Vesper_Sparrow": "Vesper Sparrow",
+    "132.White_crowned_Sparrow": "White crowned Sparrow",
+    "133.White_throated_Sparrow": "White throated Sparrow",
+    "134.Cape_Glossy_Starling": "Cape Glossy Starling",
+    "135.Bank_Swallow": "Bank Swallow",
+    "136.Barn_Swallow": "Barn Swallow",
+    "137.Cliff_Swallow": "Cliff Swallow",
+    "138.Tree_Swallow": "Tree Swallow",
+    "139.Scarlet_Tanager": "Scarlet Tanager",
+    "140.Summer_Tanager": "Summer Tanager",
+    "141.Artic_Tern": "Artic Tern",
+    "142.Black_Tern": "Black Tern",
+    "143.Caspian_Tern": "Caspian Tern",
+    "144.Common_Tern": "Common Tern",
+    "145.Elegant_Tern": "Elegant Tern",
+    "146.Forsters_Tern": "Forsters Tern",
+    "147.Least_Tern": "Least Tern",
+    "148.Green_tailed_Towhee": "Green tailed Towhee",
+    "149.Brown_Thrasher": "Brown Thrasher",
+    "150.Sage_Thrasher": "Sage Thrasher",
+    "151.Black_capped_Vireo": "Black capped Vireo",
+    "152.Blue_headed_Vireo": "Blue headed Vireo",
+    "153.Philadelphia_Vireo": "Philadelphia Vireo",
+    "154.Red_eyed_Vireo": "Red eyed Vireo",
+    "155.Warbling_Vireo": "Warbling Vireo",
+    "156.White_eyed_Vireo": "White eyed Vireo",
+    "157.Yellow_throated_Vireo": "Yellow throated Vireo",
+    "158.Bay_breasted_Warbler": "Bay breasted Warbler",
+    "159.Black_and_white_Warbler": "Black and white Warbler",
+    "160.Black_throated_Blue_Warbler": "Black throated Blue Warbler",
+    "161.Blue_winged_Warbler": "Blue winged Warbler",
+    "162.Canada_Warbler": "Canada Warbler",
+    "163.Cape_May_Warbler": "Cape May Warbler",
+    "164.Cerulean_Warbler": "Cerulean Warbler",
+    "165.Chestnut_sided_Warbler": "Chestnut sided Warbler",
+    "166.Golden_winged_Warbler": "Golden winged Warbler",
+    "167.Hooded_Warbler": "Hooded Warbler",
+    "168.Kentucky_Warbler": "Kentucky Warbler",
+    "169.Magnolia_Warbler": "Magnolia Warbler",
+    "170.Mourning_Warbler": "Mourning Warbler",
+    "171.Myrtle_Warbler": "Myrtle Warbler",
+    "172.Nashville_Warbler": "Nashville Warbler",
+    "173.Orange_crowned_Warbler": "Orange crowned Warbler",
+    "174.Palm_Warbler": "Palm Warbler",
+    "175.Pine_Warbler": "Pine Warbler",
+    "176.Prairie_Warbler": "Prairie Warbler",
+    "177.Prothonotary_Warbler": "Prothonotary Warbler",
+    "178.Swainson_Warbler": "Swainson Warbler",
+    "179.Tennessee_Warbler": "Tennessee Warbler",
+    "180.Wilson_Warbler": "Wilson Warbler",
+    "181.Worm_eating_Warbler": "Worm eating Warbler",
+    "182.Yellow_Warbler": "Yellow Warbler",
+    "183.Northern_Waterthrush": "Northern Waterthrush",
+    "184.Louisiana_Waterthrush": "Louisiana Waterthrush",
+    "185.Bohemian_Waxwing": "Bohemian Waxwing",
+    "186.Cedar_Waxwing": "Cedar Waxwing",
+    "187.American_Three_toed_Woodpecker": "American Three toed Woodpecker",
+    "188.Pileated_Woodpecker": "Pileated Woodpecker",
+    "189.Red_bellied_Woodpecker": "Red bellied Woodpecker",
+    "190.Red_cockaded_Woodpecker": "Red cockaded Woodpecker",
+    "191.Red_headed_Woodpecker": "Red headed Woodpecker",
+    "192.Downy_Woodpecker": "Downy Woodpecker",
+    "193.Bewick_Wren": "Bewick Wren",
+    "194.Cactus_Wren": "Cactus Wren",
+    "195.Carolina_Wren": "Carolina Wren",
+    "196.House_Wren": "House Wren",
+    "197.Marsh_Wren": "Marsh Wren",
+    "198.Rock_Wren": "Rock Wren",
+    "199.Winter_Wren": "Winter Wren",
+    "200.Common_Yellowthroat": "Common Yellowthroat"
+  }
+}

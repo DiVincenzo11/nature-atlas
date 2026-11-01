@@ -1,0 +1,6 @@
+{
+  "epochs_completed": 15,
+  "total_seconds": 89.09024620009586,
+  "best_validation_macro_f1": 0.6132799055519643,
+  "checkpoint_sha256": "ec4a2b74a91598b488d0260e807681a756199ebed022910faba02e8d0269de9a"
+}

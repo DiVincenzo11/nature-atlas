@@ -5,6 +5,18 @@ import pytest
 import torch
 from PIL import Image
 from fastapi.testclient import TestClient
+
+
+def test_malformed_upload_remains_http400_after_detector_patches_pillow(monkeypatch):
+    from nature_birds.api import create_app
+    def patched_open(*args,**kwargs):
+        raise ModuleNotFoundError('optional HEIF decoder missing')
+    monkeypatch.setattr(Image,'open',patched_open)
+    class Pipeline:
+        metadata={}
+    client=TestClient(create_app(Pipeline()))
+    response=client.post('/predict',files={'file':('bad.jpg',b'not an image','image/jpeg')})
+    assert response.status_code==400
 from nature_birds.pipeline import crop_box, decide
 from nature_birds.api import create_app
 from nature_birds.data import load_manifest

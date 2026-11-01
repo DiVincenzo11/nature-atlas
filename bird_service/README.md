@@ -4,6 +4,12 @@ YOLOv8 输出鸟类检测框，OpenCV 对目标做边界裁剪与 5% 外扩，Ef
 
 **原项目归档没有识别模型代码或权重。本模块于 2026-11-01 新增，是算法重建实现，不是找回的原比赛模型。**
 
+## v0.3.0 真实数据实验
+
+已在完整 CUB-200-2011（200 类）训练并发布专用权重，GT 裁剪测试 Top-1 **78.65%**、macro-F1 **0.7857**；完整两阶段联合成功率 **72.75%**，不是 mAP。官方测试集 5,794 张未参与训练或选模。冻结主干对照 Top-1 为 **63.57%**。
+
+[实验协议、复现命令与完整结果](docs/CUB200_EXPERIMENT.md) · [v0.3.0 权重下载](https://github.com/DiVincenzo11/nature-atlas/releases/tag/v0.3.0)。ImageNet 预训练可能与 CUB 测试图片重叠，不声称相对预训练集完全独立。下文默认 `fetch-models` 命令仍用于 ImageNet 流程演示，CUB 推理需显式指定下载的分类权重。
+
 ## 模型模式
 
 - `imagenet_demo`：上游 COCO 预训练 YOLOv8n + TorchVision ImageNet-1K 预训练 EfficientNetV2-S。仅验证真实图片上的两阶段流程，没有训练新的鸟类专用模型。ImageNet 包含 59 个鸟类相关类别，部分是宽类别而非严格物种，无法覆盖图鉴全部鸟种。
@@ -82,10 +88,10 @@ nature-birds serve --classifier runs/species-v1/best.pt
 
 软件诊断：`python scripts/verify_training.py --out runs/software-diagnostic`。使用标记 SYNTHETIC 的非鸟类几何图，检查一轮训练、保存加载与评测。不能作为鸟类识别准确率。
 
-## 当前验证与边界
+## 历史公开预训练演示与边界
 
-Windows CPU 下 8 项测试通过；实际 Python API → Java 接口 → Vue 上传成功。白头海雕图返回 1 个框、bald eagle；红鹳群体图返回 13 个候选框，其中 11 个 flamingo、2 个 unknown；空白图返回零框。没有逐框人工标注，**不计算准确率、召回率或物种计数精度**。
+v0.2.0 在 Windows CPU 下 8 项测试通过；实际 Python API → Java 接口 → Vue 上传成功。白头海雕图返回 1 个框、bald eagle；红鹳群体图返回 13 个候选框，其中 11 个 flamingo、2 个 unknown；空白图返回零框。没有逐框人工标注，**不计算准确率、召回率或物种计数精度**。
 
-原图来源与许可见 `examples/SOURCES.json`；结果和诊断记录见 `artifacts/`。图片来自 Smithsonian 公共领域资源，不声称与预训练数据完全独立。本轮没有目标鸟类真实训练集，也没有恢复原比赛性能。
+原图来源与许可见 `examples/SOURCES.json`；结果和诊断记录见 `artifacts/`。图片来自 Smithsonian 公共领域资源，不声称与预训练数据完全独立。该历史演示没有目标鸟类训练集，也没有恢复原比赛性能；v0.3.0 的 CUB 训练与新权重接口检查另见上方实验报告。当前算法测试共 13 项通过。
 
 本模块新增 Python 代码按 AGPL-3.0 提供，见 `LICENSE`。它不改变原仓库归档代码与素材的权利状态。上游依赖、权重及照片各自遵循其许可。

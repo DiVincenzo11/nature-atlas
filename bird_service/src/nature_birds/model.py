@@ -22,6 +22,31 @@ def sha256(path):
     return h.hexdigest()
 
 
+def export_classifier(source,out):
+    """Normalize legacy TorchVersion metadata without changing trained tensors."""
+    from torch.torch_version import TorchVersion
+    out=Path(out)
+    if out.exists():raise FileExistsError('Refusing to overwrite an exported checkpoint')
+    with torch.serialization.safe_globals([TorchVersion]):
+        original=torch.load(source,map_location='cpu',weights_only=True)
+    if original.get('architecture')!='efficientnet_v2_s' or original.get('mode')!='custom_species':
+        raise ValueError('Expected an explicit custom-species classifier checkpoint')
+    def plain(value):
+        if isinstance(value,TorchVersion):return str(value)
+        if isinstance(value,dict):return {k:plain(v) for k,v in value.items()}
+        if isinstance(value,list):return [plain(v) for v in value]
+        if isinstance(value,tuple):return tuple(plain(v) for v in value)
+        return value
+    result=plain(original)
+    result['portable_export']={'source_sha256':sha256(source),'trained_tensors_changed':False}
+    out.parent.mkdir(parents=True,exist_ok=True);torch.save(result,out)
+    loaded=torch.load(out,map_location='cpu',weights_only=True)
+    if set(loaded['state_dict'])!=set(original['state_dict']):raise RuntimeError('Export changed model keys')
+    if not all(torch.equal(v,loaded['state_dict'][k]) for k,v in original['state_dict'].items()):
+        raise RuntimeError('Export changed a trained tensor')
+    return {'file':out.name,'sha256':sha256(out),'source_sha256':sha256(source),'tensor_equality_verified':True}
+
+
 def transform(size=224, train=False):
     resize = [T.RandomResizedCrop(size, scale=(0.8, 1.0)), T.RandomHorizontalFlip()] if train else [
         T.Resize(size, interpolation=InterpolationMode.BILINEAR), T.CenterCrop(size)]
@@ -47,6 +72,7 @@ def load_classifier(path, device):
         preprocessing = transform(checkpoint["image_size"])
     else:
         raise ValueError("Unknown classifier mode")
+    model.experiment_metadata=checkpoint.get("experiment_metadata",{})
     return model.to(device).eval(), preprocessing, labels, mode
 
 

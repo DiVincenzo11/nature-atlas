@@ -208,7 +208,7 @@ export default {
   },
   computed: {
     modelNotice() {
-      return this.result.model ? this.result.model.notice : '可接入本地 YOLOv8＋EfficientNetV2 服务；需启动并配置模型。原比赛权重未恢复，公开预训练演示不代表原项目性能。';
+      return this.result.model ? this.result.model.notice : '支持本地 YOLOv8＋EfficientNetV2 服务；可加载 CUB-200 专用分类权重。识别范围以所加载模型为准，原比赛权重未恢复。';
     }
   },
   methods: {

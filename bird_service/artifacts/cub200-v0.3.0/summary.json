@@ -1,0 +1,85 @@
+{
+  "exports": {
+    "finetuned": {
+      "file": "cub200-finetuned-efficientnetv2-s.pt",
+      "sha256": "20252ff37aa696218b303800a8912504e8b96b23e556b67238d017a1a1d00fb9",
+      "source_sha256": "d2f3973abe3486c8aa70aa675b7445a466291de937b79c8c80a4f50f64de0b2e",
+      "tensor_equality_verified": true
+    },
+    "frozen_head": {
+      "file": "cub200-frozen_head-efficientnetv2-s.pt",
+      "sha256": "40a805b2ec8f5d23f788e6bc25398624675b57ecc8dba0c6d3655db286101931",
+      "source_sha256": "ec4a2b74a91598b488d0260e807681a756199ebed022910faba02e8d0269de9a",
+      "tensor_equality_verified": true
+    }
+  },
+  "results": {
+    "finetuned": {
+      "images": 5794,
+      "loss": 0.8006347101316766,
+      "accuracy": 0.7865032792544011,
+      "top5_accuracy": 0.947877114256127,
+      "macro_f1": 0.7856573615348357,
+      "split": "test",
+      "checkpoint_sha256": "20252ff37aa696218b303800a8912504e8b96b23e556b67238d017a1a1d00fb9",
+      "manifest_sha256": "c4d20f76e41e254fdc7eb6c0af1812e97a9cf49393fde7dae13f8405d3d27835",
+      "evaluation_scope": "classifier_on_provided_crops; not end-to-end detection mAP",
+      "per_image_file": "finetuned-test.per_image.csv"
+    },
+    "frozen_head": {
+      "images": 5794,
+      "loss": 1.4317540940556972,
+      "accuracy": 0.6356575768035899,
+      "top5_accuracy": 0.8948912668277529,
+      "macro_f1": 0.6336844455800393,
+      "split": "test",
+      "checkpoint_sha256": "40a805b2ec8f5d23f788e6bc25398624675b57ecc8dba0c6d3655db286101931",
+      "manifest_sha256": "c4d20f76e41e254fdc7eb6c0af1812e97a9cf49393fde7dae13f8405d3d27835",
+      "evaluation_scope": "classifier_on_provided_crops; not end-to-end detection mAP",
+      "per_image_file": "frozen_head-test.per_image.csv"
+    },
+    "pipeline": {
+      "counts": {
+        "images": 5794,
+        "any_detection": 5580,
+        "any_iou50": 5472,
+        "primary_iou50": 5396,
+        "primary_species_correct": 4341,
+        "primary_accepted": 5528,
+        "localized_species_correct": 4218,
+        "localized_accepted": 5358,
+        "localized_accepted_correct": 4215
+      },
+      "rates": {
+        "any_box_subject_recall_iou50": 0.9444252675181222,
+        "primary_box_subject_recall_iou50": 0.9313082499137039,
+        "primary_species_correct_over_all_images": 0.749223334483949,
+        "species_accuracy_given_primary_iou50": 0.7816901408450704,
+        "localized_accepted_correct_over_all_images": 0.7274767000345185,
+        "accepted_primary_coverage": 0.9540904383845358
+      },
+      "scope": "Single CUB annotated subject; primary box selected by detector confidence; not detection mAP.",
+      "limitations": "Other birds may be unannotated. Thresholds are fixed defaults, not calibrated open-set recognition. ImageNet pretraining may overlap CUB test images.",
+      "detector_confidence": 0.25,
+      "species_threshold": 0.2,
+      "iou_threshold": 0.5,
+      "detector_input": 640,
+      "crop_padding": 0.05,
+      "model": {
+        "detector": "YOLOv8",
+        "detector_sha256": "f59b3d833e2ff32e194b5bb8e08d211dc7c5bdf144b90d2c8412c47ccfc83b36",
+        "classifier": "EfficientNetV2-S",
+        "classifier_sha256": "20252ff37aa696218b303800a8912504e8b96b23e556b67238d017a1a1d00fb9",
+        "mode": "custom_species",
+        "original_project_weights": false,
+        "probability_calibrated": false,
+        "class_count": 200,
+        "training_dataset": "CUB-200-2011",
+        "notice": "\u81ea\u8bad\u7ec3\u9e1f\u7c7b\u5206\u7c7b\u6743\u91cd\uff1b\u7c7b\u522b\u548c\u6548\u679c\u4ee5\u8be5\u6743\u91cd\u7684\u72ec\u7acb\u6d4b\u8bd5\u62a5\u544a\u4e3a\u51c6\u3002"
+      },
+      "manifest_sha256": "c4d20f76e41e254fdc7eb6c0af1812e97a9cf49393fde7dae13f8405d3d27835",
+      "elapsed_seconds": 129.6708180999849,
+      "device": "cuda:0"
+    }
+  }
+}
